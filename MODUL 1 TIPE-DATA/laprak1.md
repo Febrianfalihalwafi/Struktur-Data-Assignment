@@ -301,6 +301,5 @@ Deskripsi :
 Dengan memahami konsep dan penggunaan tipe data primitif, class, struct, array, dan map, programmer dapat membuat program-program yang lebih kompleks dan efisien untuk memenuhi kebutuhan pengembangan perangkat lunak.
 
 # Referensi
-[1]Khoirudin, Algoritma & Struktur Data dengan Python 3. Semarang: Universitas Semarang Press, 2019.<br/>
-[2]Zenda,A.D.(2018, July 13).PENGERTIAN ARRAY.<br/>
-[3]Wahyuni, Zelfi. “Makalah Dasar-dasar Pemograman Komputer.” OSF Preprints, 27 Feb. 2023. Web.
+[1 Mengenal Jenis-jenis Tipe Data dalam bahasa c++. Martin Mulyo Syahid, 27 September 2019 <br/>
+[2]Contoh Program Array C++ Seperti Apa?. Suci Wulandari, 01 August 2023<br/>
