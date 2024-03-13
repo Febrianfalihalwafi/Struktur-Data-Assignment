@@ -68,7 +68,7 @@ return 0;
 
 
 
-Kode di atas digunakan untuk memilih operasi penambahan (+), pengurangan (-), perkalian (*), dan pembagian (/). Keempat operasi ini akan jalan jika user sudah menginput dua angka pada saat penginputan cin. Terdapat juga dua tipe data primitif pada program ini, yaitu char dan float. Tipe data char digunakan pada saat pemilihan switch case dan float digunakan sebagai tipe data 2 angka yang diinput user.
+Deskripsi : Program diatas adalah sebuah kalkulator sederhana yang meminta pengguna memasukan operator aritmatika (+, -, *, /) dan dua bilangan. Berdasarkan program diatas hasilnya 17, karena kita memasukan operator + atau penjumlahan dan dua bilangan 8, 9 maka hasilnya akan di tampilkan sesuai 8 + 9 = 17.
 
 # 2. Tipe Data Abstrak
 
