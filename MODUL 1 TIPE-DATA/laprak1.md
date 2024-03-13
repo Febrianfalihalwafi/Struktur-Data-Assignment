@@ -112,6 +112,9 @@ return 0;
 }
 
 ```
+# OUTPUT :
+![image](https://github.com/Febrianfalihalwafi/Struktur-Data-Assignment/assets/162521180/3dc1b422-1502-4e55-9b38-f228ffd5fad3) <br/>
+
 Kode di atas digunakan untuk mencetak isi dari struct. Struct merupakan salah satu contoh dari tipe data abstrak. Pada kode di atas terdapat sebuah struct Mahasiswa. Pada struct Mahasiswa ini, terdapat 3 nilai, yaitu char name dengan ukuran 50, char address dengan ukuran 50 juga, dan int age. Lalu pada int main, diisi nilai dan dideklarasikan struct Mahasiswa dengan 2 objek, yaitu mhs1 dengan nama Dian dan mhs2 dengan nama Bambang.
 
 # 3. Tipe Data Koleksi
@@ -140,6 +143,9 @@ int main() {
     return 0;
 }
 ```
+# OUTPUT :
+![image](https://github.com/Febrianfalihalwafi/Struktur-Data-Assignment/assets/162521180/4db90ce1-81d2-4a65-81fa-92976600292f) <br/>
+
 Kode di atas digunakan untuk mencetak isi dari sebuah array. Array merupakan salah satu contoh dari tipe data koleksi. Pada kode di atas, terdapat library array yang membantu proses pemrogramannya. Terdapat array nilai yang dapat menampung 5 nilai, yaitu 23, 50, 34, 78, dan 90. Lalu dideklarasikan di bawahnya.
 
 # Unguided 
@@ -197,7 +203,7 @@ int main(){
 
 ```
 # Output:
-![alt text](Fadhelimg_111.png) <br/>
+![image](https://github.com/Febrianfalihalwafi/Struktur-Data-Assignment/assets/162521180/9502de47-cfa4-454d-aa91-4dbc3dcf4c1b)<br/>
 Program tersebut adalah kalkulator sederhana yang memungkinkan pengguna untuk melakukan beberapa operasi aritmatika dasar seperti penjumlahan, perkalian, pembagian, pengurangan, dan pemangkatan.Program dimulai dengan mendefinisikan beberapa fungsi:
 FadhelSetiawan_321(): Menampilkan menu pilihan untuk pengguna. Fungsi-fungsi aritmatika seperti Penjumlahan(), Perkalian()Pembagian(), Pengurangan(), dan Pemangkatan(): Menerima input bilangan dari pengguna dan mengembalikan hasil operasi aritmatika sesuai dengan pilihan pengguna. Di dalam fungsi main(), terdapat loop do-while yang akan terus berjalan selama pengguna tidak memilih untuk keluar (memilih 0). Pengguna diminta untuk memilih menu pilihan. Program akan menjalankan fungsi yang sesuai dengan pilihan pengguna menggunakan pernyataan switch-case.Setelah menjalankan fungsi, hasil operasi aritmatika akan dicetak ke layar.Jika pengguna memilih untuk keluar (memilih 0), loop akan berhenti dan program akan selesai.Program menggunakan variabel global untuk menyimpan pilihan menu yang dimasukkan oleh pengguna (Pilih_234) dan variabel global data1 dan data2 untuk menyimpan bilangan yang dimasukkan oleh pengguna. Program menggunakan library <cmath> untuk memangkatkan bilangan (pow()).
 
@@ -237,7 +243,7 @@ int main() {
 }
 ```
 # Output:
-<br/>
+![image](https://github.com/Febrianfalihalwafi/Struktur-Data-Assignment/assets/162521180/b9450b59-bb8c-4778-b668-9c640ae8d237)<br/>
 Program ini bertujuan untuk menunjukkan bagaimana menggunakan struct untuk menyimpan dan mengelola informasi tentang seseorang dalam satu kesatuan yang terorganisir. Dengan menggunakan struct, informasi tentang nama, umur, dan tinggi badan seseorang dapat dengan mudah dikelola dan diakses melalui satu variabel.
 
 A. Fungsi dari Class<br/>
