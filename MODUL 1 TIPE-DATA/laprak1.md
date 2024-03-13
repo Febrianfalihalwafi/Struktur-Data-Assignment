@@ -66,9 +66,8 @@ return 0;
 # OUTPUT :
 ![image](https://github.com/Febrianfalihalwafi/Struktur-Data-Assignment/assets/162521180/9c17dd8c-aef2-4b5f-82b1-29e97f48e9b5)<br/>
 
-
-
-Deskripsi : Program diatas adalah sebuah kalkulator sederhana yang meminta pengguna memasukan operator aritmatika (+, -, *, /) dan dua bilangan. Berdasarkan program diatas hasilnya 17, karena kita memasukan operator + atau penjumlahan dan dua bilangan 8, 9 maka hasilnya akan di tampilkan sesuai 8 + 9 = 17.
+Deskripsi : Program diatas adalah sebuah kalkulator sederhana yang meminta pengguna memasukan operator aritmatika (+, -, *, /) dan dua bilangan. Berdasarkan 
+program diatas hasilnya 17, karena kita memasukan operator + atau penjumlahan dan dua bilangan 8, 9 maka hasilnya akan di tampilkan sesuai 8 + 9 = 17.
 
 # 2. Tipe Data Abstrak
 
@@ -204,11 +203,18 @@ int main(){
 ```
 # Output:
 ![image](https://github.com/Febrianfalihalwafi/Struktur-Data-Assignment/assets/162521180/9502de47-cfa4-454d-aa91-4dbc3dcf4c1b)<br/>
-Program tersebut adalah kalkulator sederhana yang memungkinkan pengguna untuk melakukan beberapa operasi aritmatika dasar seperti penjumlahan, perkalian, pembagian, pengurangan, dan pemangkatan.Program dimulai dengan mendefinisikan beberapa fungsi:
-FadhelSetiawan_321(): Menampilkan menu pilihan untuk pengguna. Fungsi-fungsi aritmatika seperti Penjumlahan(), Perkalian()Pembagian(), Pengurangan(), dan Pemangkatan(): Menerima input bilangan dari pengguna dan mengembalikan hasil operasi aritmatika sesuai dengan pilihan pengguna. Di dalam fungsi main(), terdapat loop do-while yang akan terus berjalan selama pengguna tidak memilih untuk keluar (memilih 0). Pengguna diminta untuk memilih menu pilihan. Program akan menjalankan fungsi yang sesuai dengan pilihan pengguna menggunakan pernyataan switch-case.Setelah menjalankan fungsi, hasil operasi aritmatika akan dicetak ke layar.Jika pengguna memilih untuk keluar (memilih 0), loop akan berhenti dan program akan selesai.Program menggunakan variabel global untuk menyimpan pilihan menu yang dimasukkan oleh pengguna (Pilih_234) dan variabel global data1 dan data2 untuk menyimpan bilangan yang dimasukkan oleh pengguna. Program menggunakan library <cmath> untuk memangkatkan bilangan (pow()).
 
-Kesimpulan Tipe Data Primitif:<br/>
-Tipe data primitif merupakan sebuah tipe data yang sudah ditentukan oleh sistem, disediakan oleh banyak bahasa pemrograman, dan merupakan blok bangunan fundamental untuk menyimpan nilai-nilai yang bersifat sederhana.
+Deskripsi :
+-Program dimulai dengan menampilkan daftar operasi matematika yang tersedia: penjumlahan, pengurangan, perkalian, dan pembagian.
+-Pengguna diminta untuk memilih operasi dengan memasukkan nomor pilihan.
+-Setelah itu, pengguna diminta untuk memasukkan dua bilangan yang akan dioperasikan.
+-Program menggunakan struktur switch-case untuk menentukan operasi yang akan dilakukan berdasarkan pilihan pengguna.
+-Hasil operasi disimpan dalam variabel hasil.
+-Penggunaan tipe data char untuk variabel operasi memungkinkan simbol operasi matematika (+, -, *, /) disimpan dalam memori.
+-Jika pilihan pengguna tidak valid (tidak termasuk dalam pilihan 1-4), program akan mencetak pesan kesalahan.
+-Terakhir, program mencetak operasi matematika yang dilakukan beserta hasilnya.
+
+Kesimpulan dari kode tersebut adalah sebuah program sederhana yang mengimplementasikan kalkulator dengan fitur dasar: penjumlahan, pengurangan, perkalian, dan pembagian. Program ini memungkinkan pengguna untuk memilih operasi matematika yang diinginkan dan melakukan perhitungan dengan dua bilangan yang dimasukkan.
 
 # 2. Jelaskan fungsi dari class dan struct secara detail dan berikan contoh programnya!
 
@@ -244,13 +250,14 @@ int main() {
 ```
 # Output:
 ![image](https://github.com/Febrianfalihalwafi/Struktur-Data-Assignment/assets/162521180/b9450b59-bb8c-4778-b668-9c640ae8d237)<br/>
-Program ini bertujuan untuk menunjukkan bagaimana menggunakan struct untuk menyimpan dan mengelola informasi tentang seseorang dalam satu kesatuan yang terorganisir. Dengan menggunakan struct, informasi tentang nama, umur, dan tinggi badan seseorang dapat dengan mudah dikelola dan diakses melalui satu variabel.
 
-A. Fungsi dari Class<br/>
-Class adalah salah satu dari konsep OOP yang digunakan untuk membungkus data abstraksi procedural sebagai deskripsi tergeneralisir atau rancangan dari sebuah object untuk mendefinisikan atau menggambarkan isi dan tingkah laku sebagai entitas dari object. Fitur class adalah fitur Object Oriented Program pada bahasa C++.
+Deskripsi :
+-Kode tersebut menggunakan struktur (struct) untuk mengelompokkan beberapa variabel yang berhubungan menjadi satu kesatuan yang lebih besar.
+-Dalam hal ini, struktur Person digunakan untuk menyimpan informasi tentang seorang individu, seperti nama, asal, dan berat badan.
+-Setelah membuat sebuah instance dari struct Person dengan nama febrian, program menetapkan nilai pada anggota-anggota dari instance tersebut.
+-Nilai-nilai tersebut kemudian dicetak menggunakan cout.
 
-B. Fungsi dari Struct<br/>
-Struct dalam pemrograman C++, adalah sekumpulan data yang dikelompokkan ke dalam sebuah “tabel” yang memiliki elemen-elemenyang saling terkait.Struct digunakan apabila data yang ingin dikelompokkan memiliki tipe data yang berbeda atau membuat struktur dari suatu record.
+Kesimpulan dari kode di atas adalah sebuah contoh penggunaan struktur (struct) dalam C++. Struktur digunakan untuk mengorganisir dan menyimpan informasi terkait menjadi satu kesatuan yang lebih besar. Dalam hal ini, struktur Person digunakan untuk menyimpan informasi tentang seorang individu, dan kode tersebut menunjukkan cara membuat instance dari struktur tersebut dan menetapkan serta mencetak nilai-nilai anggota dari instance tersebut.
 
 # 3. Buat dan jelaskan program menggunakan fungsi map dan jelaskan perbedaan dari array dengan map!
 
@@ -283,16 +290,11 @@ int main() {
 ```
 # Output:
 ![febrianunguided3](https://github.com/Febrianfalihalwafi/Struktur-Data-Assignment/assets/162521180/4785cf9a-d688-4976-967b-7cd8a9adacdc)<br/>
-Kode di atas digunakan untuk mencetak isi dari sebuah map. Pada kode di atas, terdapat sebuah map wisata112 dengan key yang bersifat int dan nilai-nilainya yang bersifat string. Lalu, isi dari map wisata112 dideklarasikan dengan perulangan for supaya semua elemen dapat ditampilkan.
-
-Perbedaan Array dengan Map
-    - Array harus bilangan bulat non-negatif & mulai berurutan dari 0
-    - Map dapat berupa nilai berapa pun & tidak harus berurutan
-    - Array harus dideklarasikan dengan ukuran yang tetap
-    - Map dapat dideklarasikan dengan ukuran yang dinamis
-    - Array hanya dapat menggunakan tipe data primitif
-    - Map dapat menggunakan tipe data apapun
-    - Array digunakan untuk menyimpan data yang berurutan
+Deskripsi : 
+-Kode dimulai dengan mendeklarasikan sebuah std::map dengan kunci bertipe string dan nilai bertipe int, yang disebut umur.
+-Selanjutnya, kode menambahkan beberapa pasangan kunci-nilai ke dalam map umur, dengan menggunakan operator [].
+-Setelah menambahkan pasangan-pasangan tersebut, program mengakses nilai dari map menggunakan kunci dan mencetaknya menggunakan cout.
+-Kemudian, program mencetak umur dari beberapa orang dengan menggunakan kunci dari map umur. 
 
 
 # Kesimpulan
