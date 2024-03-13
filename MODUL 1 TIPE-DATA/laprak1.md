@@ -62,8 +62,12 @@ switch (op)
 }
 return 0;
 }
-
 ```
+# OUTPUT :
+![image](https://github.com/Febrianfalihalwafi/Struktur-Data-Assignment/assets/162521180/9c17dd8c-aef2-4b5f-82b1-29e97f48e9b5)<br/>
+
+
+
 Kode di atas digunakan untuk memilih operasi penambahan (+), pengurangan (-), perkalian (*), dan pembagian (/). Keempat operasi ini akan jalan jika user sudah menginput dua angka pada saat penginputan cin. Terdapat juga dua tipe data primitif pada program ini, yaitu char dan float. Tipe data char digunakan pada saat pemilihan switch case dan float digunakan sebagai tipe data 2 angka yang diinput user.
 
 # 2. Tipe Data Abstrak
@@ -233,7 +237,7 @@ int main() {
 }
 ```
 # Output:
-![alt text](Fadhelimg_112.png)<br/>
+<br/>
 Program ini bertujuan untuk menunjukkan bagaimana menggunakan struct untuk menyimpan dan mengelola informasi tentang seseorang dalam satu kesatuan yang terorganisir. Dengan menggunakan struct, informasi tentang nama, umur, dan tinggi badan seseorang dapat dengan mudah dikelola dan diakses melalui satu variabel.
 
 A. Fungsi dari Class<br/>
@@ -272,8 +276,7 @@ int main() {
 }
 ```
 # Output:
-![alt text](![febrianunguided3])
-
+![febrianunguided3](https://github.com/Febrianfalihalwafi/Struktur-Data-Assignment/assets/162521180/4785cf9a-d688-4976-967b-7cd8a9adacdc)<br/>
 Kode di atas digunakan untuk mencetak isi dari sebuah map. Pada kode di atas, terdapat sebuah map wisata112 dengan key yang bersifat int dan nilai-nilainya yang bersifat string. Lalu, isi dari map wisata112 dideklarasikan dengan perulangan for supaya semua elemen dapat ditampilkan.
 
 Perbedaan Array dengan Map
