@@ -67,7 +67,7 @@ return 0;
 ![image](https://github.com/Febrianfalihalwafi/Struktur-Data-Assignment/assets/162521180/9c17dd8c-aef2-4b5f-82b1-29e97f48e9b5)<br/>
 
 Deskripsi : Program diatas adalah sebuah kalkulator sederhana yang meminta pengguna memasukan operator aritmatika (+, -, *, /) dan dua bilangan. Berdasarkan 
-program diatas hasilnya 17, karena kita memasukan operator + atau penjumlahan dan dua bilangan 8, 9 maka hasilnya akan di tampilkan sesuai 8 + 9 = 17.
+program diatas hasilnya 15, karena kita memasukan operator + atau penjumlahan dan dua bilangan 7, 8 maka hasilnya akan di tampilkan sesuai 7 + 8 = 15.
 
 # 2. Tipe Data Abstrak
 
