@@ -1,5 +1,5 @@
 # <h1 align="center">Laporan Praktikum Modul 1 - Tipe Data</h1>
-<p align="center">Fadhel Setiawan - 2311102171</p>
+<p align="center">Febrian Falih Alwafi - 2311102181</p>
 
 # Dasar Teori
 
@@ -30,47 +30,7 @@ Tipe data koleksi (Collection Data Type) adalah tipe data yang digunakan untuk m
 # 1. Tipe Data Primitif
 
 ```C++
-#include <iostream>
-#include <iomanip>
 
-using namespace std;
-
-
-int main(){
-    char op;
-    float num1, num2;
-
-    cout << "Enter operator (+, -, *, /): ";
-    cin >> op;
-
-    cout << "Enter two operands: ";
-    cin >> num1 >> num2;
-
-    switch (op)
-    {
-    case '+':
-        cout << "Result: " << num1 + num2 << endl;
-        break;
-    case '-':
-        cout << "Result: " << num1 - num2 << endl;
-        break;
-    case '*':
-        cout << "Result: " << num1 * num2 << endl;
-        break;
-    case '/':
-        if (num2 == 0) {
-            cout << "Result: " << fixed << setprecision(2) << num1 / num2 << endl;
-        } else {
-            cout << "Error!: Division by zero" << endl;
-        }
-        break;
-
-    default:
-        cout << "Error! operator is not correct" << endl;
-        break;
-    }
-    return 0;
-}
 ```
 Kode di atas digunakan untuk memilih operasi penambahan (+), pengurangan (-), perkalian (*), dan pembagian (/). Keempat operasi ini akan jalan jika user sudah menginput dua angka pada saat penginputan cin. Terdapat juga dua tipe data primitif pada program ini, yaitu char dan float. Tipe data char digunakan pada saat pemilihan switch case dan float digunakan sebagai tipe data 2 angka yang diinput user.
 
