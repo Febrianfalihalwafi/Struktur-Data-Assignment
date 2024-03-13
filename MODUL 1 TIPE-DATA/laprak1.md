@@ -69,6 +69,43 @@ Kode di atas digunakan untuk memilih operasi penambahan (+), pengurangan (-), pe
 # 2. Tipe Data Abstrak
 
 ```C++
+#include <stdio.h>
+
+//Struct
+struct Mahasiswa
+{
+    const char *name;
+    const char *address;
+    int age;
+};
+
+int main()
+{
+
+// menggunakan struct
+struct Mahasiswa mhs1, mhs2;
+// mengisi nilai ke struct
+mhs1.name = "Dian";
+mhs1.address = "Mataram";
+mhs1.age = 22;
+
+mhs2.name = "Bambang";
+mhs2.address = "Surabaya";
+mhs2.age = 23;
+
+// mencetak isi struct
+printf("## Mahasiswa 1 ##\n");
+printf("Nama: %s\n", mhs1.name);
+printf("Alamat: %s\n", mhs1.address);
+printf("Umur: %d\n", mhs1.age);
+
+printf("## Mahasiswa 2 ##\n");
+printf("Nama: %s\n", mhs2.name);
+printf("Alamat: %s\n", mhs2.address);
+printf("Umur: %d\n", mhs2.age);
+
+return 0;
+}
 
 ```
 Kode di atas digunakan untuk mencetak isi dari struct. Struct merupakan salah satu contoh dari tipe data abstrak. Pada kode di atas terdapat sebuah struct Mahasiswa. Pada struct Mahasiswa ini, terdapat 3 nilai, yaitu char name dengan ukuran 50, char address dengan ukuran 50 juga, dan int age. Lalu pada int main, diisi nilai dan dideklarasikan struct Mahasiswa dengan 2 objek, yaitu mhs1 dengan nama Dian dan mhs2 dengan nama Bambang.
@@ -107,105 +144,53 @@ Kode di atas digunakan untuk mencetak isi dari sebuah array. Array merupakan sal
 
 ```C++
 #include <iostream>
-#include <cmath> 
+#include <string>
+
 using namespace std;
 
-char Pilih_234; // Data primitif char untuk pilihan menu Pilih_234
-float data1, data2; // Data primitif float untuk bilangan pertama dan kedua supaya bisa menyimpan bilangan desimal
+int main(){
+    int bil1, bil2, pil;
+    float hasil;
+    char operasi; // Mengubah tipe data operasi menjadi char
+    cout << "PILIH OPERATOR DI KALKULATOR FEBRIAN" << endl;
+    cout << "1.PENJUMLAHAN" <<endl;
+    cout << "2. Pengurangan" << endl;
+    cout << "3. Perkalian" << endl;
+    cout << "4. Pembagian" << endl;
+    cout << endl;
+    
+    cout << "Masukan pilihan : ";
+    cin >> pil;
 
-void FadhelSetiawan_321() { // Fungsi untuk menampilkan menu pilihan
-    cout << "KALKULATOR FADHEL";
-    cout << "\nA. Penjumlahan";
-    cout << "\nB. Perkalian";
-    cout << "\nC. Pembagian";
-    cout << "\nD. Pengurangan";
-    cout << "\nE. Pangkat" << endl;
-    cout << "Masukkan Pilihan : ";
-    cin >> Pilih_234;
-}
+    cout << "Masukan bilangan pertama : ";
+    cin >> bil1;
+    cout <<"Masukan bilangan kedua :" ;
+    cin >> bil2;
 
-float Penjumlahan() { // Fungsi Penjumlahan
-    cout << "\n PENJUMLAHAN " << endl;
-    cout << "Bilangan pertama : ";
-    cin >> data1;
-    cout << "Ditambah bilangan kedua : ";
-    cin >> data2;
-    cout << "Hasil penjumlahan : ";
-    return data1 + data2; // Mengembalikan hasil penjumlahan
-}
-
-float Perkalian() { // Fungsi Perkalian
-    cout << "\n PERKALIAN " << endl;
-    cout << "Bilangan pertama : ";
-    cin >> data1;
-    cout << "Dikali bilangan kedua : ";
-    cin >> data2;
-    cout << "Hasil perkalian : ";
-    return data1 * data2; // Mengembalikan hasil perkalian
-}
-
-float Pembagian() { // Fungsi Pembagian
-    cout << "\n PEMBAGIAN " << endl;
-    cout << "Bilangan pertama : ";
-    cin >> data1;
-    cout << "Dibagi bilangan kedua : ";
-    cin >> data2;
-    cout << "Hasil pembagian : ";
-    return data1 / data2; // Mengembalikan hasil pembagian
-}
-
-float Pengurangan() { // Fungsi Pengurangan
-    cout << "\n PENGURANGAN " << endl;
-    cout << "Bilangan pertama : ";
-    cin >> data1;
-    cout << "Dikurangi bilangan kedua : ";
-    cin >> data2;
-    cout << "Hasil pengurangan : ";
-    return data1 - data2; // Mengembalikan hasil pengurangan
-}
-
-float Pemangkatan() { // Fungsi Pemangkatan
-    cout << "\n PEMANGKATAN " << endl;
-    cout << "Bilangan pertama : ";
-    cin >> data1;
-    cout << "Dipangkati bilangan kedua : ";
-    cin >> data2;
-    cout << "Hasil pemangkatan : ";
-    return pow(data1, data2); // Mengembalikan hasil pemangkatan dan pow itu fungsi dari library cmath diatas
-}
-
-int main() {
-    do { // Looping menu pilihan
-        FadhelSetiawan_321();
-        switch (Pilih_234) { // Switch case untuk memilih menu
-            case 'A':
-            case 'a':
-                cout << Penjumlahan() << "\n" << endl; // Jika user memilih A/a, maka akan menjalankan fungsi penjumlahan
-                break;
-            case 'B':
-            case 'b':
-                cout << Perkalian() << "\n" << endl; // Jika user memilih B/b, maka akan menjalankan fungsi perkalian
-                break;
-            case 'C':
-            case 'c':
-                cout << Pembagian() << "\n" << endl; // Jika user memilih C/c, maka akan menjalankan fungsi pembagian
-                break;
-            case 'D':
-            case 'd':
-                cout << Pengurangan() << "\n" << endl; // Jika user memilih D/d, maka akan menjalankan fungsi pengurangan
-                break;
-            case 'E':
-            case 'e':
-                cout << Pemangkatan() << "\n" << endl; // Jika user memilih E/e, maka akan menjalankan fungsi pemangkatan
-                break;
-            default:
-                cout << "\nUhh.. not a valid number so yea goodbye" << endl;
-                return 0;
-        }
-    } while (Pilih_234 != 0); // Looping akan terus berjalan selama user tidak memilih 0
-
+    switch(pil){
+        case 1 : 
+            hasil = bil1 + bil2; 
+            operasi = '+';
+            break;
+        case 2 : 
+            hasil = bil1 - bil2; 
+            operasi = '-';
+            break;
+        case 3 : 
+            hasil = bil1 * bil2; 
+            operasi = '*';
+            break;
+        case 4 : 
+            hasil = bil1 / bil2; 
+            operasi = '/';
+            break;
+        default : cout << "Inputan tidak valid" << endl;
+    }
+    cout <<  " " << bil1 << operasi << bil2 << "=" << hasil << endl;
     return 0;
-}
+
+}     
+
 ```
 # Output:
 ![alt text](Fadhelimg_111.png) <br/>
@@ -221,27 +206,28 @@ Tipe data primitif merupakan sebuah tipe data yang sudah ditentukan oleh sistem,
 
 #include <iostream>
 #include <string>
+using namespace std;
 
 // Definisikan sebuah struct bernama 'Orang'
 struct Person {
-    std::string nama;
-    int umur;
-    float tinggi;
+    string nama;
+    int asal ;
+    float beratbadan;
 };
 
 int main() {
     // Membuat instance dari struct 'Orang'
-    Person fadhel;
+    Person febrian;
 
     // Menetapkan nilai pada anggota struct
-    fadhel.nama = "Fadhel Setiawan";
-    fadhel.umur = 18;
-    fadhel.tinggi = 175;
+    febrian.nama = "febrian falih";
+    febrian.asal = 19;
+    febrian.beratbadan = 60;
 
    // Cetak nilainya
-    std::cout << "Nama: " << fadhel.nama << std::endl;
-    std::cout << "Umur: " << fadhel.umur << std::endl;
-    std::cout << "Tinggi: " << fadhel.tinggi << std::endl;
+    cout << "Nama: " << febrian.nama << endl;
+    cout << "asal: " << febrian.asal << endl;
+    cout << "beratbadan : " << febrian.beratbadan<< endl;
 
     return 0;
 }
@@ -261,29 +247,27 @@ Struct dalam pemrograman C++, adalah sekumpulan data yang dikelompokkan ke dalam
 ```C++
 
 
-// Contoh Program Fungsi Map
 #include <iostream>
-#include <map> // Library supaya bisa menggunakan fungsi map dibawah
-
+#include <map>
+#include <string>
 using namespace std;
 
 int main() {
-    
-    // Deklarasi map dengan key int dan value string
-    map<int, string> wisata112;
-  
-    // Menambahkan elemen-elemen ke dalam map
-    wisata112[1] = "taman";
-    wisata112[2] = "curug";
-    wisata112[3] = "pemandian air panas";
-    wisata112[4] = "rumah hantu";
-    wisata112[5] = "museum";
+    // Mendeklarasikan map dengan kunci bertipe string dan nilai bertipe int
+    map<string, int> umur;
 
-    cout << "-=-= Wisata Fadhel! =-=-" << endl;
-    for (int i = 1; i <= wisata112.size(); ++i) { // Looping untuk menampilkan semua elemen map
-        cout << "No." << i << " " << wisata112[i] << endl; // Menampilkan elemen map
-    }
+    // Menambahkan pasangan kunci-nilai ke dalam map
+    umur["Destia"] = 20;
+    umur["Hidayat"] = 21;
+    umur["Febrian"] = 19;
+    umur["nael"] = 23;
 
+    // Mengakses nilai dari map menggunakan kunci dan mencetaknya
+    cout << "Umur Destia : " << umur["Destia"] << endl;
+    cout << "Umur Hidayat : " << umur["Hidayat"] << endl;
+    cout << "Umur Febrian : " << umur["Febrian"] << endl;
+    cout << "Umur nael : " << umur["nael"] << endl;
+   
     return 0;
 }
 ```
