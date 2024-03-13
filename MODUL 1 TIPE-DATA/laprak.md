@@ -30,6 +30,38 @@ Tipe data koleksi (Collection Data Type) adalah tipe data yang digunakan untuk m
 # 1. Tipe Data Primitif
 
 ```C++
+#include <iostream>
+using namespace std;
+
+int main (){
+    char op;
+    float num1,num2;
+    cin >> op;
+    cin >> num1,num2;
+
+switch (op)
+{
+    case '+':
+    cout << num1 + num2;
+    break;
+
+   case '-':
+    cout << num1 - num2;
+    break;
+
+    case '*':
+    cout << num1 * num2;
+    break;
+    
+    case '/':
+    cout << num1 / num2;
+    break;
+
+    default:
+    cout << "error! operstor is not ccorrect ";
+}
+return 0;
+}
 
 ```
 Kode di atas digunakan untuk memilih operasi penambahan (+), pengurangan (-), perkalian (*), dan pembagian (/). Keempat operasi ini akan jalan jika user sudah menginput dua angka pada saat penginputan cin. Terdapat juga dua tipe data primitif pada program ini, yaitu char dan float. Tipe data char digunakan pada saat pemilihan switch case dan float digunakan sebagai tipe data 2 angka yang diinput user.
@@ -37,42 +69,7 @@ Kode di atas digunakan untuk memilih operasi penambahan (+), pengurangan (-), pe
 # 2. Tipe Data Abstrak
 
 ```C++
-#include <stdio.h>
-#include <string.h>
 
-// Struct
-struct Mahasiswa
-{
-    char name[50];
-    char address[50];
-    int age;
-};
-
-int main() {
-    // Menggunakan Struct
-    struct Mahasiswa mhs1, mhs2;
-
-    // Mengisi nilai ke struct
-    strcpy(mhs1.name, "Dian");
-    strcpy(mhs1.address, "Mataram");
-    mhs1.age = 22;
-    strcpy(mhs2.name, "Bambang");
-    strcpy(mhs2.address, "Surabaya");
-    mhs2.age = 23;
-
-    // Mencetak isi dari struct
-    printf("## Mahasiswa 1 ##\n");
-    printf("Nama: %s\n", mhs1.name);
-    printf("Alamat: %s\n", mhs1.address);
-    printf("Umur: %d\n", mhs1.age);
-    printf("\n");
-    printf("## Mahasiswa 2 ##\n");
-    printf("Nama: %s\n", mhs2.name);
-    printf("Alamat: %s\n", mhs2.address);
-    printf("Umur: %d\n", mhs2.age);
-
-    return 0;
-}
 ```
 Kode di atas digunakan untuk mencetak isi dari struct. Struct merupakan salah satu contoh dari tipe data abstrak. Pada kode di atas terdapat sebuah struct Mahasiswa. Pada struct Mahasiswa ini, terdapat 3 nilai, yaitu char name dengan ukuran 50, char address dengan ukuran 50 juga, dan int age. Lalu pada int main, diisi nilai dan dideklarasikan struct Mahasiswa dengan 2 objek, yaitu mhs1 dengan nama Dian dan mhs2 dengan nama Bambang.
 
