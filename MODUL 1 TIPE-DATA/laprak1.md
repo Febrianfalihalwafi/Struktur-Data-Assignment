@@ -272,7 +272,8 @@ int main() {
 }
 ```
 # Output:
-![alt text](Fadhelimg_113.png)
+![alt text](![image](https://github.com/Febrianfalihalwafi/Struktur-Data-Assignment/assets/162521180/fca1f0bc-3547-4719-a702-56ed7ab4dc38)
+)
 Kode di atas digunakan untuk mencetak isi dari sebuah map. Pada kode di atas, terdapat sebuah map wisata112 dengan key yang bersifat int dan nilai-nilainya yang bersifat string. Lalu, isi dari map wisata112 dideklarasikan dengan perulangan for supaya semua elemen dapat ditampilkan.
 
 Perbedaan Array dengan Map
