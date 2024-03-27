@@ -2,7 +2,7 @@
 using namespace std;
 // Febrian Falih Alwafi
 // 2311102181
-// S1F 11-E
+// S1 1F-11-E
 
 struct Node {
     string nama_181;
