@@ -988,7 +988,7 @@ Pada program ini adalah sebuah program yang menggunakan struktur data linked lis
 # Kesimpulan 
 Dari materi dan tugas diatas, bahwa pemilihan antara Single Linked List dan Double Linked List tergantung pada kebutuhan dan karakteristik spesifik dari aplikasi yang akan diimplementasikan. Jika kecepatan operasi penambahan, penghapusan, dan akses ke elemen yang berdekatan lebih penting, maka Double Linked List bisa menjadi pilihan yang lebih baik. Namun, jika kebutuhan akan penggunaan memori yang lebih efisien dan operasi penambahan dan penghapusan di ujung linked list lebih sering dilakukan, maka Single Linked List bisa menjadi pilihan yang lebih tepat dan juga bahwa single linked list dan double linked list kedua jenis linked list ini merupakan struktur data yang kuat dan fleksibel untuk menyimpan dan mengelola data dalam berbagai aplikasi.</br>
 # Referensi
-[1] Trivusi. (16 september 2022). Struktur Data Linked List: Pengertian, Karakteristik, dan Jenis-jenisnya.
+[1] Trivusi. (16 september 2022). Struktur Data Linked List: Pengertian, Karakteristik, dan Jenis-jenisnya.</br>
 [2] Rachmat, Santoso. (11 Desember 2014). Single Linked List pada C++.
 
 
