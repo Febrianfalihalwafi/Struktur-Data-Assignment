@@ -456,12 +456,185 @@ d.	Tambahkan data berikut diawal : Igor	20
 e.	Ubah data Michael menjadi : Reyn	18
 f.	Tampilkan seluruh data
 ```C++
+#include <iostream>
+using namespace std;
+// Febrian Falih Alwafi
+// 2311102181
+// S1 1F-11-E
 
+struct Node {
+    string nama_181;
+    int usia_181;
+    Node* next_181;
+};
+
+Node* head_181 = nullptr;
+
+void tampilkanList_181() {
+    cout << "[ Nama ]" << "\t" << "[ Usia ]" << endl;
+    Node* saatIni_181 = head_181;
+    while (saatIni_181 != nullptr) {
+        cout << saatIni_181->nama_181 << "\t\t" << saatIni_181->usia_181 << endl;
+        saatIni_181 = saatIni_181->next_181;
+    }
+}
+
+void insertDepan_181(string nama_181, int usia_181) {
+    Node* baru_181 = new Node;
+    baru_181->nama_181 = nama_181;
+    baru_181->usia_181 = usia_181;
+    baru_181->next_181 = head_181;
+    head_181 = baru_181;
+}
+
+void insertBelakang_181(string nama_181, int usia_181) {
+    Node* baru_181 = new Node;
+    baru_181->nama_181 = nama_181;
+    baru_181->usia_181 = usia_181;
+    baru_181->next_181 = nullptr;
+    if (head_181 == nullptr) {
+        head_181 = baru_181;
+    }
+    else {
+        Node* temp_181 = head_181;
+        while (temp_181->next_181 != nullptr) {
+            temp_181 = temp_181->next_181;
+        }
+        temp_181->next_181 = baru_181;
+    }
+}
+
+void insertTengah_181(string nama_181, int usia_181, int posisi_181) {
+    Node* baru_181 = new Node;
+    baru_181->nama_181 = nama_181;
+    baru_181->usia_181 = usia_181;
+    Node* bantu_181 = head_181;
+    for (int i_181 = 1; i_181 < posisi_181 - 1; i_181++) {
+        if (bantu_181 != nullptr) {
+            bantu_181 = bantu_181->next_181;
+        }
+    }
+    if (bantu_181 != nullptr) {
+        baru_181->next_181 = bantu_181->next_181;
+        bantu_181->next_181 = baru_181;
+    }
+}
+
+void hapusData_181(string nama_181) {
+    Node* hapus_181 = head_181;
+    Node* prev_181 = nullptr;
+    while (hapus_181 != nullptr && hapus_181->nama_181 != nama_181) {
+        prev_181 = hapus_181;
+        hapus_181 = hapus_181->next_181;
+    }
+    if (hapus_181 == nullptr) {
+        cout << "Data tidak ditemukan" << endl;
+        return;
+    }
+    if (prev_181 == nullptr) {
+        head_181 = hapus_181->next_181;
+    }
+    else {
+        prev_181->next_181 = hapus_181->next_181;
+    }
+    delete hapus_181;
+}
+
+void ubahData_181(string nama_181, string newnama_181, int newusia_181) {
+    Node* temp_181 = head_181;
+    while (temp_181 != nullptr && temp_181->nama_181 != nama_181) {
+        temp_181 = temp_181->next_181;
+    }
+    if (temp_181 != nullptr) {
+        temp_181->nama_181 = newnama_181;
+        temp_181->usia_181 = newusia_181;
+    }
+}
+
+void tampilkanData() {
+    Node* temp_181 = head_181;
+    while (temp_181 != nullptr) {
+        cout << temp_181->nama_181 << " " << temp_181->usia_181 << endl;
+        temp_181 = temp_181->next_181;
+    }
+}
+
+int main() {
+    insertBelakang_181("Febrian", 19);
+    insertBelakang_181("John", 19);
+    insertBelakang_181("Jane", 20);
+    insertBelakang_181("Michael", 18);
+    insertBelakang_181("Yusuke", 19);
+    insertBelakang_181("Akechi", 20);
+    insertBelakang_181("Hoshino", 18);
+    insertBelakang_181("Karin", 18);
+
+    char pilihan_181;
+    do {
+        cout << "\nMenu:\n";
+        cout << "a. Tampilkan data sesuai urutan tersedia (Data pertama adalah nama dan usia pengguna)\n";
+        cout << "b. Hapus data Akechi\n";
+        cout << "c. Tambahkan data berikut diantara John dan Jane : Futaba 18\n";
+        cout << "d. Tambahkan data berikut diawal : igor 20\n";
+        cout << "e. Ubah data Michael menjadi : Reyn 18\n";
+        cout << "f. Tampilkan seluruh data\n";
+        cout << "g. Keluar\n";
+        cout << "Pilihan Anda: ";
+        cin >> pilihan_181;
+
+        switch (pilihan_181) {
+            case 'a':
+                cout << "\nData yang tersedia:\n";
+                tampilkanList_181();
+                break;
+            case 'b':
+                hapusData_181("Akechi");
+                cout << "Data Akechi berhasil dihapus.\n";
+                cout << "\nData yang tersedia setelah penghapusan:\n";
+                tampilkanList_181();
+                break;
+            case 'c':
+                insertTengah_181("Futaba", 18, 3); 
+                cout << "Data Futaba berhasil ditambahkan.\n";
+                cout << "\nData yang tersedia setelah penambahan:\n";
+                tampilkanList_181();
+                break;
+            case 'd':
+                insertDepan_181("Igor", 20);
+                cout << "Data Igor berhasil ditambahkan di awal.\n";
+                cout << "\nData yang tersedia setelah penambahan:\n";
+                tampilkanList_181();
+                break;
+            case 'e':
+                ubahData_181("Michael", "Reyn", 18);
+                cout << "Data Michael berhasil diubah menjadi Reyn 18.\n";
+                cout << "\nData yang tersedia setelah perubahan:\n";
+                tampilkanList_181();
+                break;
+            case 'f':
+                cout << "\nTampilan seluruh data sekarang:\n";
+                tampilkanList_181();
+                break;
+            case 'g':
+                cout << "Terima kasih, program selesai.\n";
+                break;
+            default:
+                cout << "Pilihan tidak valid, silakan coba lagi.\n";
+                break;
+        }
+    } while (pilihan_181 != 'g');
+
+    return 0;
+}
 ```
 # Output
-![alt text](<Screenshot 2024-03-26 205325.png>)</br>
-![alt text](<Screenshot 2024-03-26 205426.png>)</br>
-![alt text](<Screenshot 2024-03-26 205456.png>)</br>
+![image](https://github.com/Febrianfalihalwafi/Struktur-Data-Assignment/assets/162521180/52e4aabc-1eaa-4a47-863b-709654d6fe1c)</br>
+![image](https://github.com/Febrianfalihalwafi/Struktur-Data-Assignment/assets/162521180/46c58fee-79bd-4401-85d9-929f4cb3bc12)</br>
+![image](https://github.com/Febrianfalihalwafi/Struktur-Data-Assignment/assets/162521180/a20b622f-f9de-48ad-90a8-b7ec92c76eb0)</br>
+![image](https://github.com/Febrianfalihalwafi/Struktur-Data-Assignment/assets/162521180/fe9fcc3d-26e1-42cd-850d-328ccc74d3e7)</br>
+
+
+
 Dalam program ini, kita memiliki sebuah struktur (struct) yang disebut Node, yang merepresentasikan simpul dalam linked list. Setiap simpul memiliki dua data: nama_171 yang bertipe string untuk menyimpan nama, dan usia_171 yang bertipe int untuk menyimpan usia. Selain itu, setiap simpul memiliki pointer (next_171) yang menunjuk ke simpul berikutnya dalam linked list. Di dalamnya, terdapat menu pilihan untuk melakukan operasi-operasi tertentu pada linked list, seperti menampilkan data, menghapus data, menambah data, mengubah data, dan keluar dari program.Program ini menawarkan pengguna berbagai opsi melalui menu, dan terus meminta input dari pengguna sampai mereka memilih untuk keluar dari program.
 
 # 2. Soal mengenai Double Linked List
@@ -492,327 +665,9 @@ Toko Skincare Purwokerto
 8.	Exit
 Pada menu 7, tampilan akhirnya akan menjadi seperti dibawah
 ini :</br>
-![alt text](<Screenshot 2024-03-26 225640.png>)</br>
+![image](https://github.com/Febrianfalihalwafi/Struktur-Data-Assignment/assets/162521180/d25f9451-2b66-42d4-b2d0-efe907dcbe6a)</br>
 ```C++
-// LAPRAK 3 : UNGUIDED 2
-// FADHEL SETIAWAN
-// 2311102171
-// S1 IF-11-E
-#include <iostream>
-#include <iomanip> 
-using namespace std;
 
-// Deklarasi Struct Node
-class Node {
-public:
-    string produk_171;
-    int harga_171;
-    Node* prev_171;
-    Node* next_171;
-};
-
-// Deklarasi Class DoublyLinkedList
-class DoublyLinkedList {
-public:
-    Node* head_171;
-    Node* tail_171;
-
-    // Constructor
-    DoublyLinkedList() {
-        head_171 = nullptr;
-        tail_171 = nullptr;
-    }
-
-    // Prosedur untuk menambahkan data di depan
-    void Push(int harga_171, string produk_171) {
-        Node* newNode_171 = new Node;
-        newNode_171->harga_171 = harga_171;
-        newNode_171->produk_171 = produk_171;
-        newNode_171->prev_171 = nullptr;
-        newNode_171->next_171 = head_171;
-
-        if (head_171 != nullptr) {
-            head_171->prev_171 = newNode_171;
-        }
-        else {
-            tail_171 = newNode_171;
-        }
-
-        head_171 = newNode_171;
-    }
-
-    // Prosedur untuk menambahkan data pada posisi tertentu
-    void PushPosition(int posisi_171, int harga_171, string produk_171) {
-        if (posisi_171 < 1) {
-            cout << "Posisi tidak valid!" << endl;
-            return;
-        }
-
-        Node* newNode_171 = new Node;
-        newNode_171->harga_171 = harga_171;
-        newNode_171->produk_171 = produk_171;
-        newNode_171->prev_171 = nullptr;
-        newNode_171->next_171 = nullptr;
-
-        if (posisi_171 == 1) {
-            newNode_171->next_171 = head_171;
-            if (head_171 != nullptr)
-                head_171->prev_171 = newNode_171;
-            else
-                tail_171 = newNode_171;
-            head_171 = newNode_171;
-            return;
-        }
-
-        Node* saatIni_171 = head_171;
-        for (int i = 1; i < posisi_171 - 1 && saatIni_171 != nullptr; ++i)
-            saatIni_171 = saatIni_171->next_171;
-
-        if (saatIni_171 == nullptr) {
-            cout << "Posisi tidak valid!" << endl;
-            delete newNode_171;
-            return;
-        }
-
-        newNode_171->next_171 = saatIni_171->next_171;
-        newNode_171->prev_171 = saatIni_171;
-        if (saatIni_171->next_171 != nullptr)
-            saatIni_171->next_171->prev_171 = newNode_171;
-        else
-            tail_171 = newNode_171;
-        saatIni_171->next_171 = newNode_171;
-    }
-
-    // Prosedur untuk menghapus data di depan
-    void Pop() {
-        if (head_171 == nullptr) {
-            cout << "Tidak ada data yang bisa dihapus!" << endl;
-            return;
-        }
-
-        Node* temp_171 = head_171;
-        head_171 = head_171->next_171;
-
-        if (head_171 != nullptr) {
-            head_171->prev_171 = nullptr;
-        }
-        else {
-            tail_171 = nullptr;
-        }
-
-        delete temp_171;
-    }
-
-    // Prosedur untuk menghapus data pada posisi tertentu
-    void PopPosition(int posisi_171) {
-        if (head_171 == nullptr) {
-            cout << "Tidak ada data yang bisa dihapus!" << endl;
-            return;
-        }
-
-        Node* temp_171 = head_171;
-        for (int i = 1; i < posisi_171 && temp_171 != nullptr; ++i) {
-            temp_171 = temp_171->next_171;
-        }
-
-        if (temp_171 == nullptr) {
-            cout << "Posisi tidak valid!" << endl;
-            return;
-        }
-
-        if (temp_171->prev_171 != nullptr) {
-            temp_171->prev_171->next_171 = temp_171->next_171;
-        } else {
-            head_171 = temp_171->next_171;
-        }
-
-        if (temp_171->next_171 != nullptr) {
-            temp_171->next_171->prev_171 = temp_171->prev_171;
-        } else {
-            tail_171 = temp_171->prev_171;
-        }
-
-        delete temp_171;
-    }
-
-    // Fungsi untuk mengupdate data
-    bool Update(string oldProduk_171, string newProduk_171, int newharga_171) {
-        Node* saatIni_171 = head_171;
-
-        while (saatIni_171 != nullptr) {
-            if (saatIni_171->produk_171 == oldProduk_171) {
-                saatIni_171->produk_171 = newProduk_171;
-                saatIni_171->harga_171 = newharga_171;
-                return true;
-            }
-            saatIni_171 = saatIni_171->next_171;
-        }
-
-        return false;
-    }
-
-    // Prosedur untuk menghapus semua data
-    void DeleteAll() {
-        Node* saatIni_171 = head_171;
-
-        while (saatIni_171 != nullptr) {
-            Node* temp_171 = saatIni_171;
-            saatIni_171 = saatIni_171->next_171;
-            delete temp_171;
-        }
-
-        head_171 = nullptr;
-        tail_171 = nullptr;
-    }
-
-    // Prosedur untuk menampilkan data
-    void Display_171() {
-        Node* saatIni_171 = head_171;
-
-        cout << left << setw(20) << "[ Nama Produk ]" << setw(10) << "[ Harga ]" << endl;
-
-        while (saatIni_171 != nullptr) {
-            cout << setw(20) << saatIni_171->produk_171 << setw(10) << saatIni_171->harga_171 << endl;
-            saatIni_171 = saatIni_171->next_171;
-        }
-
-        cout << endl;
-    }
-};
-
-int main() {
-    DoublyLinkedList list;
-
-    cout << "\n== MENU TOKO SKINCARE PURWOKERTO BY RICO ADE PRATAMA ==" << endl;
-
-    // Inisialisasi data awal
-    list.Push(30000, "Hanasui");
-    list.Push(50000, "Wardah");
-    list.Push(100000, "Skintific");
-    list.Push(150000, "Somethinc");
-    list.Push(60000, "Originote");
-    list.Display_171(); 
-
-    // Loop untuk menu interaktif
-    while (true) {
-        cout << "\nToko Skincare Purwokerto" << endl;
-        cout << "   1. Tambah Data" << endl;
-        cout << "   2. Hapus Data" << endl;
-        cout << "   3. Update Data" << endl;
-        cout << "   4. Tambah Data pada Posisi Tertentu" << endl;
-        cout << "   5. Hapus Data pada Posisi Tertentu" << endl;
-        cout << "   6. Hapus Semua Data" << endl;
-        cout << "   7. Tampilkan Data" << endl;
-        cout << "   8. Exit" << endl;
-
-        int pilihan_171;
-        cout << "Pilih Nomor: ";
-        cin >> pilihan_171;
-
-        switch (pilihan_171) {
-            case 1: {
-                int harga_171;
-                string produk_171;
-
-                cout << "\nTAMBAH PRODUK SKINCARE" << endl;
-                cout << "Nama produk: ";
-                cin.ignore();
-                getline(cin, produk_171);
-                cout << "Harga produk: ";
-                cin >> harga_171;
-                list.Push(harga_171, produk_171);
-                cout << "Produk berhasil ditambahkan!" << endl;
-                list.Display_171(); 
-                break;
-            }
-
-            case 2: {
-                list.Pop();
-                cout << "PRODUK PALING ATAS BERHASIL DIHAPUS!" << endl;
-                list.Display_171(); 
-                break;
-            }
-
-            case 3: {
-                string oldProduk_171, newProduk_171;
-                int newharga_171;
-
-                cout << "\nUPDATE DATA PRODUK SKINCARE" << endl;
-                cout << "Masukkan nama produk yang ingin diubah: ";
-                cin.ignore();
-                getline(cin, oldProduk_171);
-                cout << "Masukkan nama produk baru: ";
-                getline(cin, newProduk_171);
-                cout << "Masukkan harga baru: ";
-                cin >> newharga_171;
-
-                bool update_171 = list.Update(oldProduk_171, newProduk_171, newharga_171);
-                if (update_171) {
-                    cout << "Data berhasil diperbarui!" << endl;
-                } else {
-                    cout << "Data tidak ditemukan!" << endl;
-                }
-                list.Display_171(); 
-                break;
-            }
-
-            case 4: {
-                int posisi_171, harga_171;
-                string produk_171;
-
-                cout << "\nTAMBAH PRODUK SKINCARE PADA POSISI TERTENTU" << endl;
-                cout << "Masukkan posisi untuk produk baru: ";
-                cin >> posisi_171;
-                cout << "Nama produk: ";
-                cin.ignore();
-                getline(cin, produk_171);
-                cout << "Harga produk: ";
-                cin >> harga_171;
-                list.PushPosition(posisi_171, harga_171, produk_171);
-                cout << "Produk berhasil ditambahkan pada posisi ke-" << posisi_171 << "!" << endl;
-                list.Display_171(); 
-                break;
-            }
-
-            case 5: {
-                int posisi_171;
-
-                cout << "\nHAPUS PRODUK SKINCARE PADA POSISI TERTENTU" << endl;
-                cout << "Masukkan posisi untuk menghapus data: ";
-                cin >> posisi_171;
-                list.PopPosition(posisi_171);
-                cout << "Data berhasil dihapus pada posisi ke-" << posisi_171 << "!" << endl;
-                list.Display_171(); 
-                break;
-            }
-
-            case 6: {
-                list.DeleteAll();
-                cout << "SEMUA DATA BERHASIL DI HAPUS!" << endl;
-                list.Display_171(); 
-                break;
-            }
-
-            case 7: {
-                cout << "\nTAMPILAN DATA PRODUK TOKO SKINCARE PURWOKERTO SEKARANG" << endl;
-                list.Display_171(); 
-                break;
-            }
-
-            case 8: {
-                cout << "Terimakasih telah menggunakan program ini!" << endl;
-                return 0;
-            }
-
-            default: {
-                cout << "Pilihan anda tidak valid!" << endl;
-                break;
-            }
-        }
-    }
-
-    return 0;
-}
 ```
 # Output
 ![alt text](<Screenshot 2024-03-26 213422.png>)</br>
