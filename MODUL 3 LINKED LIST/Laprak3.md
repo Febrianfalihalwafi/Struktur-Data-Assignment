@@ -977,7 +977,11 @@ int main() {
 ```
 # Output
 ![image](https://github.com/Febrianfalihalwafi/Struktur-Data-Assignment/assets/162521180/9ec33776-37a0-4278-9051-cfb435ec8ed5)</br>
-![image](https://github.com/Febrianfalihalwafi/Struktur-Data-Assignment/assets/162521180/cb5ed782-2cda-4657-a9a8-0f940b8ba1b0)</br>
+![image](https://github.com/Febrianfalihalwafi/Struktur-Data-Assignment/assets/162521180/e3579b73-43a8-41e9-a713-afe7eeb30f2d)</br>
+![image](https://github.com/Febrianfalihalwafi/Struktur-Data-Assignment/assets/162521180/37ffd69c-a293-469d-a1a6-8e474b3a512f)</br>
+![image](https://github.com/Febrianfalihalwafi/Struktur-Data-Assignment/assets/162521180/f161eb25-c946-4a33-88c9-e3e806a65198)</br>
+![image](https://github.com/Febrianfalihalwafi/Struktur-Data-Assignment/assets/162521180/3e697e7c-6acb-40b6-9050-efd3963e9946)</br>
+
 
 Pada program ini adalah sebuah program yang menggunakan struktur data linked list ganda (doubly linked list) untuk menyimpan dan mengelola data tentang produk skincare. Deklarasi Struct Node dan Class DoublyLinkedList: Program menggunakan dua struktur utama, yaitu Node yang memiliki atribut produk dan harga serta pointer prev dan next untuk menunjukkan ke node sebelumnya dan node selanjutnya dalam linked list, dan DoublyLinkedList yang memiliki pointer ke head dan tail dari linked list.</br>
 
