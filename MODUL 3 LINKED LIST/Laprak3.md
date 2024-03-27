@@ -294,8 +294,7 @@ int main()
 ```
 # Output
 ![image](https://github.com/Febrianfalihalwafi/Struktur-Data-Assignment/assets/162521180/5c62b0e1-e6e1-41d1-9084-4647b4e388fd)</br>
-Program ini memungkinkan pengguna untuk memahami konsep dasar pengelolaan Single Linked List melalui implementasi operasi dasar seperti penambahan, penghapusan, perubahan nilai, dan penampilan elemen.
-
+Program menggunakan konsep single linked list non-circular untuk menyimpan dan mengelola sekumpulan data integer. Terdapat struktur data Node yang memiliki dua komponen: data (integer) dan pointer ke Node selanjutnya.</br>
 # 2. Latihan Double Linked List Source
 ```C++
 #include <iostream> 
@@ -427,8 +426,7 @@ int main() {
 ```
 # Output
 ![image](https://github.com/Febrianfalihalwafi/Struktur-Data-Assignment/assets/162521180/b5547e9e-d5e2-4351-907f-c9610f60ee5c)</br>
-Doubly Linked List adalah struktur data di mana setiap node memiliki dua pointer: satu pointer ke node sebelumnya dan satu pointer ke node selanjutnya. Program ini memungkinkan pengguna untuk menambah, menghapus, mengupdate, dan menampilkan data dalam Doubly Linked List melalui menu interaktif.
-
+Program diatas adalah implementasi dari sebuah program yang menggunakan struktur data Doubly Linked List (daftar berantai ganda) untuk menyimpan dan mengelola data integer. </br>
 # Unguided 
 
 # 1. Soal mengenai Single Linked List
@@ -625,9 +623,7 @@ int main() {
 ![image](https://github.com/Febrianfalihalwafi/Struktur-Data-Assignment/assets/162521180/a20b622f-f9de-48ad-90a8-b7ec92c76eb0)</br>
 ![image](https://github.com/Febrianfalihalwafi/Struktur-Data-Assignment/assets/162521180/fe9fcc3d-26e1-42cd-850d-328ccc74d3e7)</br>
 
-
-
-Dalam program ini, kita memiliki sebuah struktur (struct) yang disebut Node, yang merepresentasikan simpul dalam linked list. Setiap simpul memiliki dua data: nama_171 yang bertipe string untuk menyimpan nama, dan usia_171 yang bertipe int untuk menyimpan usia. Selain itu, setiap simpul memiliki pointer (next_171) yang menunjuk ke simpul berikutnya dalam linked list. Di dalamnya, terdapat menu pilihan untuk melakukan operasi-operasi tertentu pada linked list, seperti menampilkan data, menghapus data, menambah data, mengubah data, dan keluar dari program.Program ini menawarkan pengguna berbagai opsi melalui menu, dan terus meminta input dari pengguna sampai mereka memilih untuk keluar dari program.
+Pada program ini adalahsebuah program yang menggunakan struktur data linked list untuk menyimpan dan mengelola data berupa nama dan usia. Program menggunakan struktur data Node yang memiliki dua atribut: nama_181 untuk menyimpan nama dan usia_181 untuk menyimpan usia, serta sebuah pointer next_181 yang menunjukkan ke node selanjutnya dalam linked list.
 
 # 2. Soal mengenai Double Linked List
 Modifikasi Guided Double Linked List dilakukan dengan penambahan operasi untuk menambah data, menghapus, dan update di tengah / di urutan tertentu yang diminta. Selain itu, buatlah agar tampilannya menampilkan Nama produk dan harga.<br>
@@ -983,13 +979,13 @@ int main() {
 ![image](https://github.com/Febrianfalihalwafi/Struktur-Data-Assignment/assets/162521180/9ec33776-37a0-4278-9051-cfb435ec8ed5)</br>
 ![image](https://github.com/Febrianfalihalwafi/Struktur-Data-Assignment/assets/162521180/cb5ed782-2cda-4657-a9a8-0f940b8ba1b0)</br>
 
-Di awal program, kita mendefinisikan sebuah class Node yang merepresentasikan satu elemen dalam linked list. Setiap elemen (Node) memiliki dua bagian: nama produk dan harganya. Kemudian, kita juga mendefinisikan sebuah class DoublyLinkedList yang berisi berbagai operasi yang dapat dilakukan pada linked list ganda, seperti menambah data, menghapus data, mengupdate data, dan lain-lain. Semua operasi yang dilakukan pada linked list diimplementasikan menggunakan konsep linked list ganda. Misalnya, untuk menambah data pada posisi tertentu, program akan mencari elemen pada posisi yang ditentukan, lalu menautkan elemen baru di antara elemen-elemen lainnya. Program ini memberikan pengalaman interaktif yang memungkinkan pengguna untuk mengelola data produk toko skincare dengan mudah.
+Pada program ini adalah sebuah program yang menggunakan struktur data linked list ganda (doubly linked list) untuk menyimpan dan mengelola data tentang produk skincare. Deklarasi Struct Node dan Class DoublyLinkedList: Program menggunakan dua struktur utama, yaitu Node yang memiliki atribut produk dan harga serta pointer prev dan next untuk menunjukkan ke node sebelumnya dan node selanjutnya dalam linked list, dan DoublyLinkedList yang memiliki pointer ke head dan tail dari linked list.</br>
 
 # Kesimpulan 
-Dari materi dan tugas diatas, dapat disimpulkan bahwa single linked list dan double linked list kedua jenis linked list ini merupakan struktur data yang kuat dan fleksibel untuk menyimpan dan mengelola data dalam berbagai aplikasi.
-
+Dari materi dan tugas diatas, bahwa pemilihan antara Single Linked List dan Double Linked List tergantung pada kebutuhan dan karakteristik spesifik dari aplikasi yang akan diimplementasikan. Jika kecepatan operasi penambahan, penghapusan, dan akses ke elemen yang berdekatan lebih penting, maka Double Linked List bisa menjadi pilihan yang lebih baik. Namun, jika kebutuhan akan penggunaan memori yang lebih efisien dan operasi penambahan dan penghapusan di ujung linked list lebih sering dilakukan, maka Single Linked List bisa menjadi pilihan yang lebih tepat dan juga bahwa single linked list dan double linked list kedua jenis linked list ini merupakan struktur data yang kuat dan fleksibel untuk menyimpan dan mengelola data dalam berbagai aplikasi.</br>
 # Referensi
-[1] Nick Parlante. (2001, january 25). Stanford CS Education Library. 
-[2] Putra, A. k. (2019, April 25). Single linked list.
+[1] Trivusi. (16 september 2022). Struktur Data Linked List: Pengertian, Karakteristik, dan Jenis-jenisnya.
+[2] Rachmat, Santoso. (11 Desember 2014). Single Linked List pada C++.
+
 
 
