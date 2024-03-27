@@ -980,10 +980,9 @@ int main() {
 }
 ```
 # Output
-![alt text](<Screenshot 2024-03-26 213422.png>)</br>
-![alt text](<Screenshot 2024-03-26 212819.png>)</br>
-![alt text](<Screenshot 2024-03-26 212931.png>)</br>
-![alt text](<Screenshot 2024-03-26 213027-1.png>)</br>
+![image](https://github.com/Febrianfalihalwafi/Struktur-Data-Assignment/assets/162521180/9ec33776-37a0-4278-9051-cfb435ec8ed5)</br>
+![image](https://github.com/Febrianfalihalwafi/Struktur-Data-Assignment/assets/162521180/cb5ed782-2cda-4657-a9a8-0f940b8ba1b0)</br>
+
 Di awal program, kita mendefinisikan sebuah class Node yang merepresentasikan satu elemen dalam linked list. Setiap elemen (Node) memiliki dua bagian: nama produk dan harganya. Kemudian, kita juga mendefinisikan sebuah class DoublyLinkedList yang berisi berbagai operasi yang dapat dilakukan pada linked list ganda, seperti menambah data, menghapus data, mengupdate data, dan lain-lain. Semua operasi yang dilakukan pada linked list diimplementasikan menggunakan konsep linked list ganda. Misalnya, untuk menambah data pada posisi tertentu, program akan mencari elemen pada posisi yang ditentukan, lalu menautkan elemen baru di antara elemen-elemen lainnya. Program ini memberikan pengalaman interaktif yang memungkinkan pengguna untuk mengelola data produk toko skincare dengan mudah.
 
 # Kesimpulan 
