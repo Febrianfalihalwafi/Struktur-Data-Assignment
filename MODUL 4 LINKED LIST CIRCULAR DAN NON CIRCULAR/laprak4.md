@@ -1158,7 +1158,7 @@ int main() {
 # Menampilkan seluruh data mahasisswa setelah penggantian
 ![image](https://github.com/Febrianfalihalwafi/Struktur-Data-Assignment/assets/162521180/1d09b045-be53-43d6-a2e6-d5789f876554)
 
-Progrsm diatas yaitu :
+Program diatas yaitu :
 
 1. Kode mengimplementasikan struktur data linked list menggunakan struct node, yang memiliki dua string (nama dan NIM) serta pointer next yang menunjuk ke node berikutnya.
 
