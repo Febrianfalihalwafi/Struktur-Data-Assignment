@@ -27,7 +27,12 @@ void main()
 }
 ```
 </br>
-![image](https://github.com/Febrianfalihalwafi/Struktur-Data-Assignment/assets/162521180/777b904d-dac3-421c-ba49-19c593af566a)
+
+![image](https://github.com/Febrianfalihalwafi/Struktur-Data-Assignment/assets/162521180/dab10a45-9feb-483c-b3bc-f5f0ccf30a81)
+
+
+</br>
+
 
 2. Menambah node dan membuat tail dari  linked list circular
 Deklarasi penambahan node baru:
@@ -52,8 +57,11 @@ void main()
 }
 ```
 </br>
-![image](https://github.com/Febrianfalihalwafi/Struktur-Data-Assignment/assets/162521180/615f929b-f1b2-4da7-a7fc-43d6d64bba6f)
 
+![image](https://github.com/Febrianfalihalwafi/Struktur-Data-Assignment/assets/162521180/7d38214c-b312-4994-ac27-875be293977a)
+
+
+</br>
 
 Gambar Penambahan Node Baru
 
@@ -91,6 +99,33 @@ void main()
 }
 ```
 </br>
-![image](https://github.com/Febrianfalihalwafi/Struktur-Data-Assignment/assets/162521180/0b170202-24e4-4075-b27d-ea22a99cf143)
+
+![image](https://github.com/Febrianfalihalwafi/Struktur-Data-Assignment/assets/162521180/dc291fd5-3370-4f78-9b81-f05c1c4ccb9d)
+
+
 </br>
+
+Linked list non circular adalah linked List yang pointer next pada node terakhir(tail) -nya menunjuk ke Null.
+1. Deklarasi node dengan struct pada single linked list:
+```C++
+struct tnode
+{
+      int data;
+      struct tnode *next;
+}
+```
+
+Gambar Sebuah Node pada Single Linked List
+2. Deklarasi node untuk beberapa keperluan, seperti berikut ini:
+```C++ struct tnode *head=NULL, *curr=NULL, *node=NULL; ```
+
+3. Membuat elemen pertama dan menambahkan elemen di belakang Single Linked List
+
+![image](https://github.com/Febrianfalihalwafi/Struktur-Data-Assignment/assets/162521180/4fbc9c6c-0103-433c-b823-dc15cc531ec8)
+</br>
+
+# Guided
+
+1) Linked List Non Circular
+```c++
 
