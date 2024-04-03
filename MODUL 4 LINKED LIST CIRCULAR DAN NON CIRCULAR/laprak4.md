@@ -1192,9 +1192,9 @@ Pemilihan jenis linked list tergantung pada kebutuhan operasi yang akan dilakuka
 
 # Referensi
 
-1.) Anita Sindar, R. M. S. Struktur Data Dan Algoritma Dengan C++. Vol. 1. CV. AA. RIZKY, 2019.
-2.) Sihombing, Johnson. "Penerapan Stack Dan Queue Pada Array Dan Linked List Dalam Java." INFOKOM (Informatika & Komputer) 7.2 (2019): 15-24.
-3.) Nugraha, Aria Sakti. "Artikel Double Linked List Circulate." (2019).
+1.) Anita Sindar, R. M. S. Struktur Data Dan Algoritma Dengan C++. Vol. 1. CV. AA. RIZKY, 2019.<br>
+2.) Sihombing, Johnson. "Penerapan Stack Dan Queue Pada Array Dan Linked List Dalam Java." INFOKOM (Informatika & Komputer) 7.2 (2019): 15-24.<br>
+3.) Nugraha, Aria Sakti. "Artikel Double Linked List Circulate." (2019).<br>
 
 
 
