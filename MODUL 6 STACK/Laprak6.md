@@ -179,7 +179,63 @@ int main()
 1) Unguided 1 
 
 ```c++
+#include <iostream>
+#include <stack>
 
+using namespace std;
+
+// Nama : Febrian Falih Alwafi
+// Nim : 2311102181
+
+bool Palindrom_181(string kalimat181)
+{
+  for (int i = 0; i < kalimat181.length(); i++)
+  { // Konversi kalimat ke huruf kecil
+    kalimat181[i] = tolower(kalimat181[i]);
+  }
+
+  stack<char> s; // Buat stack untuk menyimpan karakter kalimat
+
+  for (int i = 0; i < kalimat181.length(); i++)
+  { // Masukkan karakter kalimat ke stack
+    s.push(kalimat181[i]);
+  }
+
+  for (int i = 0; i < kalimat181.length() / 2; i++)
+  { // Membandingkan karakter dari depan dan belakang kalimat
+    if (kalimat181[i] != s.top())
+    {
+      return false;
+    }
+    s.pop();
+  }
+
+  return true;
+}
+
+int main()
+{
+  string kalimat181;
+  cout << "===== Febrian Falih =======" << endl;
+
+  do
+  {
+    cout << "\n Masukkan kalimat: "; // Input kalimat dari pengguna
+    getline(cin, kalimat181);
+
+    if (Palindrom_181(kalimat181))
+    { // Memeriksa apakah kalimat palindrom atau bukan
+      cout << " Kalimat " << kalimat181 << " adalah : Palindrom!" << endl;
+    }
+    else
+    {
+      cout << " Kalimat " << kalimat181 << " bukan : Palindrom!" << endl;
+    }
+
+  } while (kalimat181 != "exit");
+  
+  return 0;
+}
 ```
 # Output 
 ![alt text](<Screenshot 2024-05-08 160552.png>)
@@ -188,42 +244,7 @@ Program ini berfungsi untuk memeriksa apakah sebuah kalimat yang dimasukkan peng
 
 2) Unguided 2 
 ```c++
-#include <iostream>
-#include <stack>
 
-using namespace std;
-
-string pengulang171(string kalimat171) {
-  stack<char> s; // Buat stack untuk menyimpan karakter kalimat
-
-  for (int i = 0; i < kalimat171.length(); i++) { // Masukkan karakter kalimat ke stack
-    s.push(kalimat171[i]);
-  }
-
-  string setelahmengulangi171; // Membalik kalimat dengan mengeluarkan karakter dari stack
-  while (!s.empty()) {
-    setelahmengulangi171 += s.top();
-    s.pop();
-  }
-
-  return setelahmengulangi171;
-}
-
-int main() {
-  string kalimat171;
-  cout << "-=-=- Membalik Kata -=-=-" << endl;
-
-  do {
-  cout << "\n Masukkan kalimat yang ingin dibalikkan: ";  // Input kalimat dari pengguna
-  getline(cin, kalimat171);
-
-  string setelahmengulangi171 = pengulang171(kalimat171);  // Membalik kalimat
-
-  cout << " Kalimat yang dibalik: " << setelahmengulangi171 << endl; // Menampilkan kalimat yang dibalik
-
-  } while (kalimat171 != "exit");
-  return 0;
-}
 ```
 # Output
 ![alt text](<Screenshot 2024-05-08 154628.png>)
