@@ -8,11 +8,13 @@ b. Mampu mengimplementasikan operasi-operasi pada stack
 c. Mampu memecahkan permasalahan dengan solusi stack
 
 # Dasar Teori 
-<p align="justify">Stack adalah struktur data sederhana yang digunakan untuk menyimpan data (mirip dengan Linked Lists). Dalam tumpukan, urutan kedatangan data penting. Sebuah tumpukan piring di kafetaria adalah contoh bagus dari tumpukan. Piring ditambahkan ke tumpukan saat mereka dibersihkan dan ditempatkan di bagian atas. Ketika sebuah piring dibutuhkan, diambil dari bagian atas tumpukan. Piring pertama yang ditempatkan di tumpukan adalah yang terakhir digunakan. </p></br>
+<p align="justify"> Stack adalah sebuah kumpulan data dimana data yang diletakkan di atas data  yang lain. Dengan demikian stack adalah struktur data yang menggunakan konsep LIFO(Last In First Out). Dengan demikian, elemen terakhir yang disimpan dalam stack menjadi elemen pertama yang diambil. Dalam proses komputasi, untuk meletakkan sebuah elemen pada bagian atas dari stack, maka dilakukan operasi push. Dan untuk memindahkan dari tempat yang atas tersebut, maka dilakukan operasi pop.</p></br>
+</br>
 
-Definisi: Sebuah tumpukan adalah daftar terurut di mana penyisipan dan penghapusan dilakukan di satu ujung, disebut atas. Elemen terakhir yang dimasukkan adalah yang pertama dihapus. Oleh karena itu, disebut daftar Last in First out (LIFO).</br>
+![image](https://github.com/Febrianfalihalwafi/Struktur-Data-Assignment/assets/162521180/6b3a7e47-7a75-487f-a598-4c5750925f18)
 
-![alt text](<Screenshot 2024-05-08 161929.png>)
+![image](https://github.com/Febrianfalihalwafi/Struktur-Data-Assignment/assets/162521180/70111cf8-1838-4b53-9c2d-8b61c3652204)
+
 
 ### Operasi pada stack melibatkan beberapa fungsi dasar yang dapat dilakukan pada
 struktur data ini. Berikut adalah beberapa operasi umum pada stack:
@@ -170,9 +172,9 @@ int main()
 }
 ```
 # Output
-![alt text](<Screenshot 2024-05-08 155853.png>)</br>
+![image](https://github.com/Febrianfalihalwafi/Struktur-Data-Assignment/assets/162521180/666e4fa9-59e9-48c0-be14-ccd536125a87)</br>
 # Penjelasan
- Program tersebut merupakan program untuk menyimpan dan mengelola sejumlah data (dalam hal ini, daftar buku) dengan prinsip LIFO (Last In First Out), di mana elemen terakhir yang dimasukkan akan menjadi yang pertama untuk dikeluarkan. Program ini memungkinkan pengguna untuk menambah, menghapus, melihat, mengubah, dan menghitung jumlah data yang disimpan dalam stack. Hal ini dapat diterapkan dalam berbagai konteks, seperti manajemen buku perpustakaan, pencatatan riwayat transaksi, atau bahkan dalam pemrosesan data pada aplikasi komputer.
+Kode di atas adalah implementasi stack menggunakan array dalam C++. Stack adalah struktur data yang mengikuti prinsip LIFO (Last In, First Out), di mana elemen terakhir yang dimasukkan adalah yang pertama kali dihapus. Kode ini menyediakan fungsi-fungsi dasar seperti push (menambahkan elemen), pop (menghapus elemen), peek (melihat elemen tanpa menghapus), dan fungsi-fungsi lainnya untuk memeriksa keadaan stack. Selain itu, fungsi main() digunakan untuk menguji operasi stack tersebut dengan menambah, menghapus, dan mengubah data dalam stack.
 
 # Unguided
 
@@ -238,22 +240,59 @@ int main()
 }
 ```
 # Output 
-![alt text](<Screenshot 2024-05-08 160552.png>)
+![image](https://github.com/Febrianfalihalwafi/Struktur-Data-Assignment/assets/162521180/761f9d83-a5fd-47b2-956e-b755007fd96d)</br>
 # Penjelasan 
-Program ini berfungsi untuk memeriksa apakah sebuah kalimat yang dimasukkan pengguna adalah palindrom atau bukan. Itu dilakukan dengan memasukkan setiap karakter dari kalimat ke dalam stack, lalu membandingkan karakter tersebut dengan karakter-karakter di depan kalimat. Jika kalimat tersebut dapat dibaca dari depan dan belakang dengan hasil yang sama, maka kalimat itu adalah palindrom. 
+Program C++ di atas adalah implementasi untuk mengecek apakah sebuah kalimat adalah palindrom atau bukan. Program tersebut juga mengimplementasikan pengecekan palindrom dengan menggunakan stack. Fungsi Palindrom_181 mengambil sebuah string dan memeriksa apakah string tersebut merupakan palindrom atau tidak dengan memanfaatkan struktur data stack. Fungsi main adalah tempat program dimulai, dimana pengguna diminta untuk memasukkan kalimat dan hasil pengecekan palindrom ditampilkan. Program akan berulang terus menerus hingga pengguna memasukkan kata "exit".
 
 2) Unguided 2 
 ```c++
+#include <iostream>
+#include <stack>
 
+using namespace std;
+
+// Nama : Febrian Falih Alwafi
+// Nim : 2311102181
+
+string Mengulang181(string kalimat181) {
+  stack<char> s; // Buat stack untuk menyimpan karakter kalimat
+
+  for (int i = 0; i < kalimat181.length(); i++) { // Masukkan karakter kalimat ke stack
+    s.push(kalimat181[i]);
+  }
+
+  string sesudahmengulangi181; // Membalik kalimat dengan mengeluarkan karakter dari stack
+  while (!s.empty()) {
+    sesudahmengulangi181 += s.top();
+    s.pop();
+  }
+
+  return sesudahmengulangi181;
+}
+
+int main() {
+  string kalimat181;
+  cout << "===== Febrian - Balikan kalimat =======" << endl;
+
+  do {
+  cout << "\n Cantumkan kalimat yang ingin dibalikkan: ";  // Input kalimat dari pengguna
+  getline(cin, kalimat181);
+
+  string sesudahmengulangi181 = Mengulang181(kalimat181);  // Membalik kalimat
+
+  cout << " Kata atau kalimat yang dibalik: " << sesudahmengulangi181 << endl; // Menampilkan kalimat yang dibalik
+
+  } while (kalimat181 != "exit");
+  return 0;
+}
 ```
 # Output
-![alt text](<Screenshot 2024-05-08 154628.png>)
+![image](https://github.com/Febrianfalihalwafi/Struktur-Data-Assignment/assets/162521180/f91923e8-31a3-41d3-a3c8-3b15115be126)</br>
 # Penjelasan 
-Program tersebut merupakan program yang meminta pengguna memasukkan sebuah kalimat dan kemudian membalikkan kalimat tersebut. Ini dilakukan dengan menggunakan struktur data stack untuk membalikkan urutan karakter dalam kalimat. Program akan terus berjalan dan membalikkan setiap kalimat yang dimasukkan oleh pengguna. 
+Program tersebut membalikkan kalimat atau kata yang dimasukkan oleh pengguna menggunakan struktur data stack. Fungsi Mengulang181 membuat stack dari karakter-karakter kalimat, kemudian mengeluarkan karakter-karakter dari stack untuk menyusun kembali kalimat tersebut dalam urutan terbalik. Fungsi main meminta input dari pengguna, memanggil fungsi Mengulang181 untuk membalikkan kalimat, dan menampilkan hasil balikan. Program berulang terus menerus hingga pengguna memasukkan kata "exit".
 
 # Referensi
-[1] Stroustrup, B., A Tour of C++ Third Edition. United States: Pearson Education, Inc., 2023.<br/>
-[2]Y. Wu,S.Wang,C.-P.Bezemerand K.Inoue,"How do developers utilize source code from stack overflow?", Empir. Softw. Eng.,vol.24,no.2,pp.637-673,2019.</br>
-[3]Muhammad Nugraha, Dasar Pemrograman Dengan C++, Materi Paling Dasar untuk Menjadi Programmer Berbagai Platform. Yogyakarta: Deepublish, 2021.
-
+[1] Anita Sindar, R. M. S. Struktur Data Dan Algoritma Dengan C++. Vol. 1. CV. AA. RIZKY, 2019.
+[2] Utami, Ema, et al. Langkah Mudah Belajar Struktur Data Menggunakan C/C++. Elex Media Komputindo, 2017.
+[3] Rohmah, Mimin Fatchiyatur, and Rokhmad Eko Cahyono. Teori dan Aplikasi Algoritma Pemrograman dengan Bahasa C dan C++. Penerbit NEM, 2022.
 
