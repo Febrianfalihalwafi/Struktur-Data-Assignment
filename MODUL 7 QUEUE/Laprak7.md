@@ -9,23 +9,26 @@
 3. Mahasiswa mampu menerapkan operasi tampil data pada queue
 
 # DASAR TEORI
-Queue adalah struktur data yang digunakan untuk menyimpan data dengan metode FIFO (First-In First-Out). Data yang pertama dimasukkan ke dalam queue akan menjadi data yang pertama pula untuk dikeluarkan dari queue. Queue mirip dengan konsep antrian pada kehidupan sehari-hari, dimana konsumen yang datang lebih dulu akan dilayani terlebih dahulu.</br>
+Pada struktur data  Queue atau antrian adalah sekumpulan data yang mana  penambahan elemen hanya bisa dilakukan pada suatu ujung disebut dengan sisi belakang (rear), dan penghapusan (pengambilan elemen) dilakukan lewat ujung lain (disebut dengan sisi depan atau front). 
 
-Implementasi queue dapat dilakukan dengan menggunakan array atau linked list. Struktur data queue terdiri dari dua pointer yaitu front dan rear. Front/head adalah pointer ke elemen pertama dalam queue dan rear/tail/back adalah pointer ke elemen terakhir dalam queue.</br>
+Pada Stack atau tumpukan menggunakan prinsip “Masuk terakhir keluar pertama”atau LIFO (Last In First Out), Maka pada Queue atau antrian prinsip yang digunakan adalah “Masuk Pertama Keluar Pertama” atau FIFO (First In First Out).
 
-![alt text](<Screenshot 2024-05-15 232532.png>)</br>
+Queue atau antrian banyak kita jumpai dalam kehidupan sehari-hari, ex: antrian Mobil diloket Tol, Antrian mahasiswa Mendaftar, dll. Contoh lain dalam bidang komputer adalah pemakaian sistem komputer berbagi waktu(time-sharing computer system) dimana ada sejumlah pemakai yang akan menggunakan sistem tersebut secara serempak.
 
-Perbedaan antara stack dan queue terdapat pada aturan penambahan dan penghapusan elemen. Pada stack, operasi penambahan dan penghapusan elemen dilakukan di satu ujung. Elemen yang terakhir diinputkan akan berada paling dengan dengan ujung atau dianggap paling atas sehingga pada operasi penghapusan, elemen teratas tersebut akan dihapus paling awal, sifat demikian dikenal dengan LIFO.</br>
+Pada Queue atau antrian Terdapat satu buah pintu masuk di suatu ujung dan satu buah pintu keluar di ujung satunya dimana membutuhkan variabel Head dan Tail (depan/front, belakang/rear).
 
-maupun delete. Prosedur ini sering disebut Enqueue dan Dequeue pada kasus Queue. Untuk Enqueue, cukup tambahkan elemen setelah elemen terakhir Queue, dan untuk Dequeue, cukup "geser"kan Head menjadi elemen selanjutnya.</br>
+![image](https://github.com/Febrianfalihalwafi/Struktur-Data-Assignment/assets/162521180/295e1b77-49e4-4f09-b2e9-c56cccd0dcc7)</br>
 
-# Operasi pada Queue
-- enqueue() : menambahkan data ke dalam queue.
-- dequeue() : mengeluarkan data dari queue.
-- peek() : mengambil data dari queue tanpa menghapusnya.
-- isEmpty() : mengecek apakah queue kosong atau tidak.
-- isFull() : mengecek apakah queue penuh atau tidak.
-- size() : menghitung jumlah elemen dalam queue.
+
+# Operasi-operasi Queue :
+
+● enqueue() : menambahkan data ke dalam queue.
+● dequeue() : mengeluarkan data dari queue.
+● peek() : mengambil data dari queue tanpa menghapusnya.
+● isEmpty() : mengecek apakah queue kosong atau tidak.
+● isFull() : mengecek apakah queue penuh atau tidak.
+● size() : menghitung jumlah elemen dalam queue.
+
 
 # GUIDED
 
@@ -122,11 +125,10 @@ int main() {
 }
 ```
 # Output
-![image](https://github.com/Febrianfalihalwafi/Struktur-Data-Assignment/assets/162521180/a907a50a-95f0-401d-8b32-a99bf17c8541)
-</br>
+![image](https://github.com/Febrianfalihalwafi/Struktur-Data-Assignment/assets/162521180/a907a50a-95f0-401d-8b32-a99bf17c8541)</br>
 
 # Penjelasan Guided 1 
-Program ini berfungsi untuk mensimulasikan operasi dasar pada antrian (queue) menggunakan array dengan kapasitas maksimal 5 elemen. Mengimplementasikan dan memahami operasi dasar pada antrian seperti penambahan, penghapusan, dan pengecekan status antrian. Menggunakan antrian dalam aplikasi yang membutuhkan struktur data FIFO.
+Kode di atas merupakan implementasi antrian (queue) sederhana menggunakan array di C++. Antrian ini memiliki kapasitas maksimal lima elemen yang dilacak menggunakan variabel front dan back. Fungsi isFull() mengecek apakah antrian penuh, sedangkan isEmpty() mengecek apakah antrian kosong. Fungsi enqueueAntrian() menambahkan elemen baru ke antrian jika tidak penuh, dan dequeueAntrian() menghapus elemen dari antrian jika tidak kosong dengan menggeser elemen-elemen yang tersisa. Fungsi countQueue() mengembalikan jumlah elemen dalam antrian, dan clearQueue() mengosongkan seluruh antrian. Fungsi viewQueue() menampilkan isi antrian, menampilkan elemen kosong sebagai "(kosong)". Di dalam fungsi main(), beberapa operasi antrian dilakukan: menambah elemen "Andi" dan "Maya", menampilkan antrian dan jumlah elemennya, menghapus satu elemen, menampilkan kembali antrian, mengosongkan antrian, dan akhirnya menampilkan antrian yang sudah kosong beserta jumlah elemennya.
 
 # UNGUIDED 1 
 ```c++
@@ -243,7 +245,7 @@ int main() {
 
 
 # Penjelasan Program 
-Program ini berfungsi untuk mengimplementasikan antrian (queue) menggunakan struktur data linked list untuk menyimpan data teller Program ini memiliki fungsi untuk menambahkan data ke antrian (enqueueAntrian), menghapus data dari antrian (dequeueAntrian), memeriksa apakah antrian kosong (isEmpty), menghitung jumlah elemen dalam antrian (countQueue), menghapus semua elemen dari antrian (clearQueue), dan menampilkan semua elemen dalam antrian (viewQueue). Pada fungsi main, program menambahkan data teller ke antrian, menghapus data dari antrian, dan mengosongkan antrian, sambil menampilkan kondisi antrian setelah setiap operasi untuk mendemonstrasikan cara kerja fungsi-fungsi tersebut.
+Kode di atas adalah implementasi antrian (queue) menggunakan struktur data linked list di C++. Setiap node dalam linked list memiliki data berupa string dan pointer ke node berikutnya. Antrian ini memiliki dua pointer, head untuk elemen pertama dan tail untuk elemen terakhir. Fungsi isEmpty() mengembalikan true jika antrian kosong. Fungsi enqueueAntrian() menambahkan elemen baru ke akhir antrian, mengatur head dan tail jika antrian awalnya kosong. Fungsi dequeueAntrian() menghapus elemen pertama dari antrian, dan jika setelah penghapusan antrian menjadi kosong, tail diatur menjadi NULL. Fungsi countQueue() menghitung dan mengembalikan jumlah elemen dalam antrian. Fungsi clearQueue() menghapus semua elemen dari antrian dengan memanggil dequeueAntrian() berulang kali hingga antrian kosong. Fungsi viewQueue() menampilkan semua elemen dalam antrian, menampilkan pesan jika antrian kosong. Dalam fungsi main(), beberapa operasi dilakukan: menambah elemen "Bahrul" dan "Supri" ke antrian, menampilkan antrian dan jumlah elemennya, menghapus satu elemen, menampilkan kembali antrian, mengosongkan antrian, dan akhirnya menampilkan antrian yang sudah kosong serta jumlah elemennya.
 
 # UNGUIDED 2
 ```c++
@@ -366,16 +368,18 @@ int main() {
 
 
 # Penjelasan Program
-Program ini mengimplementasikan antrian (queue) dengan struktur data linked list untuk menyimpan informasi mahasiswa. Setiap node dalam linked list menyimpan nama dan NIM mahasiswa. Program ini mencakup beberapa fungsi utama:</br>
-- isEmpty: Mengecek apakah antrian kosong.
-- enqueueAntrian: Menambahkan data mahasiswa ke antrian
-- dequeueAntrian: Menghapus data mahasiswa dari antrian
-- countQueue: Menghitung jumlah data mahasiswa dalam antrian dengan mengiterasi melalui semua node.
-- clearQueue: Mengosongkan seluruh antrian dengan menghapus semua node secara berurutan.
-- viewQueue: Menampilkan seluruh data mahasiswa dalam antrian dengan mengiterasi melalui semua node dan mencetak informasi nama dan NIM.</br>
-Dalam fungsi main, program menunjukkan operasi antrian dengan menambahkan beberapa mahasiswa ke antrian, menghapus satu mahasiswa dari antrian, dan kemudian mengosongkan seluruh antrian, sambil mencetak kondisi antrian setelah setiap operasi untuk menunjukkan bagaimana setiap fungsi bekerja. Program ini berguna untuk memahami konsep dasar antrian dan operasi yang terkait, serta bagaimana mengelola data dinamis menggunakan linked list dalam konteks pemrograman struktural.
+Kode di atas adalah implementasi antrian (queue) menggunakan struktur data linked list dalam bahasa C++, dirancang untuk menyimpan data mahasiswa dengan nama dan NIM. Setiap node dalam linked list berisi data mahasiswa dan pointer ke node berikutnya. Antrian menggunakan dua pointer, head untuk elemen pertama dan tail untuk elemen terakhir.
+
+Berikut adalah penjelasan fungsi-fungsinya:
+
+- isEmpty(): Mengecek apakah antrian kosong.
+- enqueueAntrian(string nama, long long int NIM): Menambahkan elemen baru ke akhir antrian. Jika antrian kosong, elemen baru menjadi head dan tail.
+- dequeueAntrian(): Menghapus elemen pertama dari antrian. Jika antrian kosong, mencetak pesan bahwa antrian kosong.
+- countQueue(): Menghitung dan mengembalikan jumlah elemen dalam antrian.
+- clearQueue(): Menghapus semua elemen dalam antrian dengan memanggil dequeueAntrian() hingga antrian kosong.
+- viewQueue(): Menampilkan semua elemen dalam antrian. Jika antrian kosong, mencetak pesan bahwa antrian kosong.
 
 # REFERENSI
-[1] Carroll, Steven, and Alexander Goponenko. "A C++ implementation of a threadsafe priority queue based on multi-dimensional linked lists and MRLock." (2019).
-[2] Zheng Li dkk, C++ Programming. Republic State of China: De Gruyter, 2019.
-[3] Stroustrup, B., A Tour of C++ Third Edition. United States: Pearson Education, Inc., 2023.
+[1] Anita Sindar, R. M. S. Struktur Data Dan Algoritma Dengan C++. Vol. 1. CV. AA. RIZKY, 2019.
+[2] Gunawan, Rizaldy, Haris Yuana, and Sabitul Kirom. "IMPLEMENTASI METODE QUEUE PADA SISTEM ANTRIAN ONLINE BERBASIS WEB STUDI KASUS UPTD PUSKESMAS SANANWETAN." JATI (Jurnal Mahasiswa Teknik Informatika) 7.3 (2023): 1538-1545.
+[3] Serumpun, M., Octaviansyah, A. F., Assuja, M. A., Hermanto, R., & Jeck, F. (2023). SISTEM E-BOOKING PELAYANAN JASA SALON MENGGUNAKAN METODE MULTILEVEL FEEDBACK QUEUE (STUDY KASUS: SALON GRIYA). TELEFORTECH: Journal of Telematics and Information Technology, 3(1), 21-25.
