@@ -133,9 +133,12 @@ Program ini berfungsi untuk mensimulasikan operasi dasar pada antrian (queue) me
 #include <iostream>
 using namespace std;
 
+// Nama : Febrian Falih Alwafi
+// Nim : 2311102181
+// Kelas : S1F-11-E
 
 struct Node {
-  string dat171;
+  string dat181;
   Node* next;
 };
 
@@ -149,9 +152,9 @@ bool isEmpty() {
 }
 
 
-void enqueueAntrian(string dat171) {
+void enqueueAntrian(string dat181) {
   Node* newNode = new Node; 
-  newNode->dat171 = dat171; 
+  newNode->dat181 = dat181; 
   newNode->next = NULL; 
 
   if (isEmpty()) { 
@@ -166,7 +169,7 @@ void enqueueAntrian(string dat171) {
 
 void dequeueAntrian() {
   if (isEmpty()) {
-    cout << "Huh, this queue is empty! Nothing to dequeue!" << endl;
+    cout << "Hmm, this queue is empty! Nothing to dequeue! / Hmm, antrian ini kosong ! Tidak ada yang bisa di ambil " << endl;
     return;
   }
 
@@ -208,26 +211,26 @@ void viewQueue() {
   Node* current = head;
   int i = 1;
   while (current != NULL) {
-    cout << i << ". " << current->dat171 << endl;
+    cout << i << ". " << current->dat181 << endl;
     i++;
     current = current->next;
   }
 }
 
 int main() {
-    cout << "\n TELLER QUEUE \n" << endl;
-    cout << "-=- Enqueue/Add Tellers -=-" << endl;
-    enqueueAntrian("Andi");
-    enqueueAntrian("Maya");
+    cout << "\n TELLER QUEUE - Febrian Falih Alwafi \n" << endl;
+    cout << "=== Enqueue/Add Tellers ====" << endl;
+    enqueueAntrian("Bahrul");
+    enqueueAntrian("Supri");
     viewQueue();
     cout << "Jumlah antrian: " << countQueue() << endl;
 
-    cout << "\n-=- Dequeue/Remove Tellers -=-" << endl;
+    cout << "\n=== Dequeue/Remove Tellers ===" << endl;
     dequeueAntrian();
     viewQueue();
     cout << "Jumlah antrian: " << countQueue() << endl;
 
-    cout << "\n-=- Remove All Tellers -=-" << endl;
+    cout << "\n=== Remove All Tellers ===" << endl;
     clearQueue();
     viewQueue();
     cout << "Jumlah antrian: " << countQueue() << endl;
@@ -236,7 +239,8 @@ int main() {
 }
 ```
 # Output
-![alt text](<Screenshot 2024-05-15 231639.png>)
+![image](https://github.com/Febrianfalihalwafi/Struktur-Data-Assignment/assets/162521180/ae470bb6-fdd2-4b0d-9d70-3de2c377dbd6)</br>
+
 
 # Penjelasan Program 
 Program ini berfungsi untuk mengimplementasikan antrian (queue) menggunakan struktur data linked list untuk menyimpan data teller Program ini memiliki fungsi untuk menambahkan data ke antrian (enqueueAntrian), menghapus data dari antrian (dequeueAntrian), memeriksa apakah antrian kosong (isEmpty), menghitung jumlah elemen dalam antrian (countQueue), menghapus semua elemen dari antrian (clearQueue), dan menampilkan semua elemen dalam antrian (viewQueue). Pada fungsi main, program menambahkan data teller ke antrian, menghapus data dari antrian, dan mengosongkan antrian, sambil menampilkan kondisi antrian setelah setiap operasi untuk mendemonstrasikan cara kerja fungsi-fungsi tersebut.
@@ -244,13 +248,16 @@ Program ini berfungsi untuk mengimplementasikan antrian (queue) menggunakan stru
 # UNGUIDED 2
 ```c++
 #include <iostream>
-
 using namespace std;
+
+// Nama : Febrian Falih Alwafi
+// Nim : 2311102181
+// Kelas : S1F-11-E
 
 
 struct Node {
-  string NamaMahasiswa171;
-  long long int NIMMahasiswa171;
+  string NamaMahasiswa181;
+  long long int NIMMahasiswa181;
   Node* next;
 };
 
@@ -266,8 +273,8 @@ bool isEmpty() {
 
 void enqueueAntrian(string nama, long long int NIM) {
   Node* newNode = new Node; // Buat node baru
-  newNode->NamaMahasiswa171 = nama;
-  newNode->NIMMahasiswa171 = NIM;
+  newNode->NamaMahasiswa181 = nama;
+  newNode->NIMMahasiswa181 = NIM;
   newNode->next = NULL; 
 
   if (isEmpty()) { 
@@ -282,7 +289,7 @@ void enqueueAntrian(string nama, long long int NIM) {
 
 void dequeueAntrian() {
   if (isEmpty()) {
-    cout << "Yo! The queue is empty! There's nothing to dequeue!" << endl;
+    cout << "Ya The queue is empty! There's nothing to dequeue! / Ya antriannya kosong ! Tidak ada yang bisa dihapus karena antriannya kosong " << endl;
     return;
   }
 
@@ -316,7 +323,7 @@ void clearQueue() {
 
 void viewQueue() {
   if (isEmpty()) {
-    cout << "Hey, the queue is empty!" << endl;
+    cout << "Hey, the queue is empty / Hey, antrian ini kosong" << endl;
     return;
   }
 
@@ -324,29 +331,29 @@ void viewQueue() {
   Node* current = head;
   int i = 1;
   while (current != NULL) {
-    cout << i << ". " << current->NamaMahasiswa171 << " (" << current->NIMMahasiswa171 << ")" << endl;
+    cout << i << ". " << current->NamaMahasiswa181 << " (" << current->NIMMahasiswa181 << ")" << endl;
     i++;
     current = current->next;
   }
 }
 
 int main() {
-  cout << "\n Queue Mahasiswa " << endl;
+  cout << "\n Febrian Falih - Queue Mahasiswa " << endl;
 
-  cout << "\n-=- Enqueue/Add Queue Mahasiswa -=-" << endl;
-  enqueueAntrian("Fadhel", 2311102171);
-  enqueueAntrian("Fuad", 2311102172);
-  enqueueAntrian("Rusdi", 9312011173);
-  enqueueAntrian("Hardin", 3211102174);
+  cout << "\n==== Enqueue/Add Queue Mahasiswa ====" << endl;
+  enqueueAntrian("Febrian", 2311102181);
+  enqueueAntrian("Fahri", 2311102180);
+  enqueueAntrian("Deden", 7312011179);
+  enqueueAntrian("Bagas", 4211102178);
   viewQueue();
   cout << "Jumlah antrian: " << countQueue() << endl;
 
-  cout << "\n-=- Dequeue/Remove Queue Mahasiswa -=-" << endl;
+  cout << "\n==== Dequeue/Remove Queue Mahasiswa ====" << endl;
   dequeueAntrian();
   viewQueue();
   cout << "Jumlah antrian: " << countQueue() << endl;
 
-  cout << "\n-=- Clear All Queues -=-" << endl;
+  cout << "\n==== Clear All Queues / kosongkan semua antrian ====" << endl;
   clearQueue();
   viewQueue();
   cout << "Jumlah antrian: " << countQueue() << endl;
@@ -355,7 +362,8 @@ int main() {
 }
 ```
 # Output
-![alt text](<Screenshot 2024-05-15 230925.png>)
+![image](https://github.com/Febrianfalihalwafi/Struktur-Data-Assignment/assets/162521180/ca9ec246-9b4a-4746-b888-78e132891526)</br>
+
 
 # Penjelasan Program
 Program ini mengimplementasikan antrian (queue) dengan struktur data linked list untuk menyimpan informasi mahasiswa. Setiap node dalam linked list menyimpan nama dan NIM mahasiswa. Program ini mencakup beberapa fungsi utama:</br>
