@@ -380,6 +380,6 @@ Berikut adalah penjelasan fungsi-fungsinya:
 - viewQueue(): Menampilkan semua elemen dalam antrian. Jika antrian kosong, mencetak pesan bahwa antrian kosong.
 
 # REFERENSI
-[1] Anita Sindar, R. M. S. Struktur Data Dan Algoritma Dengan C++. Vol. 1. CV. AA. RIZKY, 2019.
-[2] Gunawan, Rizaldy, Haris Yuana, and Sabitul Kirom. "IMPLEMENTASI METODE QUEUE PADA SISTEM ANTRIAN ONLINE BERBASIS WEB STUDI KASUS UPTD PUSKESMAS SANANWETAN." JATI (Jurnal Mahasiswa Teknik Informatika) 7.3 (2023): 1538-1545.
-[3] Serumpun, M., Octaviansyah, A. F., Assuja, M. A., Hermanto, R., & Jeck, F. (2023). SISTEM E-BOOKING PELAYANAN JASA SALON MENGGUNAKAN METODE MULTILEVEL FEEDBACK QUEUE (STUDY KASUS: SALON GRIYA). TELEFORTECH: Journal of Telematics and Information Technology, 3(1), 21-25.
+[1] Anita Sindar, R. M. S. Struktur Data Dan Algoritma Dengan C++. Vol. 1. CV. AA. RIZKY, 2019.</br>
+[2] Gunawan, Rizaldy, Haris Yuana, and Sabitul Kirom. "IMPLEMENTASI METODE QUEUE PADA SISTEM ANTRIAN ONLINE BERBASIS WEB STUDI KASUS UPTD PUSKESMAS SANANWETAN." JATI (Jurnal Mahasiswa Teknik Informatika) 7.3 (2023): 1538-1545.</br>
+[3] Serumpun, M., Octaviansyah, A. F., Assuja, M. A., Hermanto, R., & Jeck, F. (2023). SISTEM E-BOOKING PELAYANAN JASA SALON MENGGUNAKAN METODE MULTILEVEL FEEDBACK QUEUE (STUDY KASUS: SALON GRIYA). TELEFORTECH: Journal of Telematics and Information Technology, 3(1), 21-25.</br>
