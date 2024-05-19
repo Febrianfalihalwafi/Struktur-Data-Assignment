@@ -22,12 +22,12 @@ Pada Queue atau antrian Terdapat satu buah pintu masuk di suatu ujung dan satu b
 
 # Operasi-operasi Queue :
 
-● enqueue() : menambahkan data ke dalam queue.
-● dequeue() : mengeluarkan data dari queue.
-● peek() : mengambil data dari queue tanpa menghapusnya.
-● isEmpty() : mengecek apakah queue kosong atau tidak.
-● isFull() : mengecek apakah queue penuh atau tidak.
-● size() : menghitung jumlah elemen dalam queue.
+● enqueue() : menambahkan data ke dalam queue.</br>
+● dequeue() : mengeluarkan data dari queue.</br>
+● peek() : mengambil data dari queue tanpa menghapusnya.</br>
+● isEmpty() : mengecek apakah queue kosong atau tidak.</br>
+● isFull() : mengecek apakah queue penuh atau tidak.</br>
+● size() : menghitung jumlah elemen dalam queue.</br>
 
 
 # GUIDED
