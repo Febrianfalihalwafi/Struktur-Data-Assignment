@@ -1,5 +1,7 @@
 # <h1 align="center">Laporan Praktikum Modul 7 - QUEUE </h1>
-<p align="center">Fadhel Setiawan - 2311102171</p>
+<h3> Nama : Febrian Falih Alwafi </h3>
+<h3>Nim : 2311102181</h3>
+<h3>Kelas : S1F-11-E</h3>
 
 # TUJUAN PRAKTIKUM
 1. Mahasiswa mampu menjelaskan definisi dan konsep dari double queue
@@ -120,7 +122,8 @@ int main() {
 }
 ```
 # Output
-![alt text](<Screenshot 2024-05-15 231823.png>)</br>
+![image](https://github.com/Febrianfalihalwafi/Struktur-Data-Assignment/assets/162521180/a907a50a-95f0-401d-8b32-a99bf17c8541)
+</br>
 
 # Penjelasan Guided 1 
 Program ini berfungsi untuk mensimulasikan operasi dasar pada antrian (queue) menggunakan array dengan kapasitas maksimal 5 elemen. Mengimplementasikan dan memahami operasi dasar pada antrian seperti penambahan, penghapusan, dan pengecekan status antrian. Menggunakan antrian dalam aplikasi yang membutuhkan struktur data FIFO.
