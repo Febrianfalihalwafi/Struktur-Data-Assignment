@@ -251,7 +251,7 @@ int main() {
 
 
 # Penjelasan Program 
-Program di atas adalah implementasi algoritma pencarian huruf dalam sebuah kalimat menggunakan Binary Search setelah data diurutkan menggunakan Selection Sort.  setelah kalimat tersebut diurutkan menggunakan Selection Sort. Program ini diawali dengan mengimpor pustaka standar yang diperlukan dan menggunakan namespace std untuk mempermudah penulisan kode. Di dalam fungsi main, program meminta pengguna untuk memasukkan sebuah kalimat dan huruf yang ingin dicari. Kalimat tersebut kemudian dikonversi menjadi sebuah vector<char> yang akan mempermudah pengolahan karakter satu per satu. Fungsi selection_sort diimplementasikan untuk mengurutkan karakter dalam vector<char>. Algoritma ini bekerja dengan menemukan elemen terkecil dari bagian yang tidak diurutkan dan menukarnya dengan elemen pertama dari bagian tersebut, lalu mengulangi proses ini untuk elemen berikutnya hingga seluruh vector terurut.
+Program di atas adalah implementasi algoritma pencarian huruf dalam sebuah kalimat menggunakan Binary Search setelah data diurutkan menggunakan Selection Sort.  setelah kalimat tersebut diurutkan menggunakan Selection Sort. Di dalam fungsi main, program meminta pengguna untuk memasukkan sebuah kalimat dan huruf yang ingin dicari. Kalimat tersebut kemudian dikonversi menjadi sebuah vector<char> yang akan mempermudah pengolahan karakter satu per satu. Fungsi selection_sort diimplementasikan untuk mengurutkan karakter dalam vector<char>. Algoritma ini bekerja dengan menemukan elemen terkecil dari bagian yang tidak diurutkan dan menukarnya dengan elemen pertama dari bagian tersebut, lalu mengulangi proses ini untuk elemen berikutnya hingga seluruh vector terurut.
 
 # UNGUIDED 2
 ```c++
