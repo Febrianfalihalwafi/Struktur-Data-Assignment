@@ -294,7 +294,7 @@ int main() {
 
 
 # Penjelasan Program
-Program di atas bertujuan untuk menghitung jumlah huruf vokal dalam sebuah kalimat yang diinput oleh pengguna. Program dimulai dengan mengimpor pustaka standar iostream dan string serta menggunakan namespace std untuk mempermudah penulisan kode. Fungsi isVowel didefinisikan untuk memeriksa apakah sebuah karakter adalah huruf vokal (a, e, i, o, u). Fungsi ini mengonversi karakter input menjadi huruf kecil menggunakan tolower dan kemudian memeriksa apakah karakter tersebut termasuk salah satu huruf vokal.
+Program di atas bertujuan untuk menghitung jumlah huruf vokal dalam sebuah kalimat yang diinput oleh pengguna. Fungsi isVowel didefinisikan untuk memeriksa apakah sebuah karakter adalah huruf vokal (a, e, i, o, u). Fungsi ini mengonversi karakter input menjadi huruf kecil menggunakan tolower dan kemudian memeriksa apakah karakter tersebut termasuk salah satu huruf vokal.
 
 # UNGUIDED 3
 ```c++
@@ -337,9 +337,7 @@ int main() {
 ![image](https://github.com/Febrianfalihalwafi/Struktur-Data-Assignment/assets/162521180/af6548fd-8d7d-43fc-87f8-f14f990d9280)</br>
 
 # Penjelasan Program
-Program di atas adalah implementasi dari algoritma Sequential Search untuk menghitung jumlah kemunculan angka 4 dalam sebuah array. Program dimulai dengan mendeklarasikan array data yang berisi sekumpulan bilangan bulat. Variabel n dihitung sebagai jumlah elemen dalam array tersebut. Kemudian, variabel angka diinisialisasi dengan nilai 4 yang akan dicari dalam array.
-
-Selanjutnya, program menggunakan loop for untuk iterasi melalui setiap elemen dalam array. Pada setiap iterasi, program memeriksa apakah elemen saat ini sama dengan nilai yang dicari (angka). Jika iya, maka variabel ketemu181 diatur sebagai true dan variabel count untuk menghitung jumlah kemunculan angka 4 ditingkatkan. Setelah selesai iterasi, program menampilkan pesan yang mencakup data awal serta jumlah kemunculan angka 4 yang ditemukan.
+Program di atas adalah implementasi dari algoritma Sequential Search untuk menghitung jumlah kemunculan angka 4 dalam sebuah array. Program dimulai dengan mendeklarasikan array data yang berisi sekumpulan bilangan bulat. Variabel n dihitung sebagai jumlah elemen dalam array tersebut. Kemudian, variabel angka diinisialisasi dengan nilai 4 yang akan dicari dalam array. Selanjutnya, program menggunakan loop for untuk iterasi melalui setiap elemen dalam array. Pada setiap iterasi, program memeriksa apakah elemen saat ini sama dengan nilai yang dicari (angka). Jika iya, maka variabel ketemu181 diatur sebagai true dan variabel count untuk menghitung jumlah kemunculan angka 4 ditingkatkan. Setelah selesai iterasi, program menampilkan pesan yang mencakup data awal serta jumlah kemunculan angka 4 yang ditemukan.
 
 # REFERENSI
 [1] Onsardi, Onsardi, Muntahanah Muntahanah, and Rozali Toyib. "Penerpan Algoritma Binary Search Dalam Pencarian Data Potensi Investasi Di Kabupaten Seluma Dengan Smartphone." Journal Scientific and Applied Informatics 3.3 (2020): 129-136.
