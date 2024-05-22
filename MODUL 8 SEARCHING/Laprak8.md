@@ -22,13 +22,13 @@ Jenis - Jenis Searching :
 1. Sekuensial ( Sequential Searching )
      Sequential Search merupakan metode pencarian data dalam array dengan cara membandingkan data yang dicari dengan data yang ada di dalam array secara berurutan. Pencarian data dengan Metode Sequential Search efektif untuk mencari data yang dalam posisi yang tidak terurut atau acak. Data yang dicari tadi dibandingkan dengan masing-masing data yang ada di dalam array. Jika data yang dicari ditemukan maka kita dapat membuat statement bahwa data telah temukan.Namun, Jika data yang dicari tidak ditemukan maka kita dapat membuat statement bahwa data telah temukan.
    Proses Sequential Search dapat dijelaskan sebagai berikut:
-1. Menentukan data yang akan dicari.
-2. Membaca data array satu per satu secaras ekuensial
-3. Membaca data mulai dari data pertama sampai dengan data terakhir, kemudian data yang dicari akan dibandingkan dengan masing-masing data yang terdapat dalam array.
-a. Apabilah data yang dicari ditemukan maka kita dapat membuat pernyataan bahwa data telah ditemukan.
+- Menentukan data yang akan dicari.
+-  Membaca data array satu per satu secaras ekuensial
+-  Membaca data mulai dari data pertama sampai dengan data terakhir, kemudian data yang dicari akan dibandingkan dengan masing-masing data yang terdapat dalam array.
+a. Apabila data yang dicari ditemukan maka kita dapat membuat pernyataan bahwa data telah ditemukan.
 b. Jika data yang dicari tidak ditemukan maka kita dapat membuat pernyataan bahwa data tidak temukan.
 
-3.  Binary Search
+2. Binary Search
 Metode  Binary Search adalah suatu metode pencarian data dengan cara mengelompokkan array menjadi bagian-bagian. Binary Search hanya dapat diterapkan pada data yang telah terurut baik ascending maupun descending dalamsuatu array. 
 
 Proses Binary Search dengan data ascending dan telah urut:
