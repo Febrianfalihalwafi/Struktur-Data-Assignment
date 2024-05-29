@@ -478,9 +478,9 @@ Kode di atas merupakan implementasi dari sebuah program yang mengelola binary tr
 
 ### UNGUDED 
 
-1. Buatlah program graph dengan menggunakan inputan user untuk menghitung jarak dari sebuah kota ke kota lainnya.</BR>
+1. Buatlah program graph dengan menggunakan inputan user untuk menghitung jarak dari sebuah kota ke kota lainnya.</br>
 Output Program : 
-
+![image](https://github.com/Febrianfalihalwafi/Struktur-Data-Assignment/assets/162521180/e8fb76ac-6246-45f3-af00-d0eb28dfeb10)</br>
 
 ## UNGUIDED 1 
 ```c++
@@ -1021,5 +1021,6 @@ Kode di atas adalah implementasi dari struktur data pohon biner dalam bahasa C++
 Jadi kesimpulan dari teori mengenai graph dan tree tersebut adalah Graph adalah kumpulan dari node (simpul) yang terhubung oleh busur (edge). Graph dapat digunakan untuk merepresentasikan berbagai jenis hubungan antara objek, seperti jaringan komputer, relasi antar data, atau jalur perjalanan. Graph dapat bersifat terarah (directed) atau tidak terarah (undirected), dapat memiliki bobot pada setiap busur (weighted), dan dapat memiliki siklus (cycle) atau tidak. Graph juga bisa terbagi menjadi beberapa jenis, seperti graph berarah, graph tak berarah, graph berbobot, dan lain-lain, sedangkan Tree adalah tipe khusus dari graph yang memiliki struktur hirarkis. Tree terdiri dari node yang terhubung secara hierarkis, dimulai dari satu node khusus yang disebut sebagai root, dan setiap node lainnya memiliki tepat satu node parent kecuali root. graph dan tree adalah dua struktur data yang penting dan memiliki peran yang berbeda dalam pemrograman dan ilmu komputer. Graph digunakan untuk merepresentasikan hubungan yang lebih umum antara objek, sedangkan tree digunakan untuk representasi struktur hierarkis seperti dalam penyimpanan data terstruktur atau representasi hubungan parent-anak.
 
 ## REFERENSI
-[1] Sedgewick, R., Algorithms in C++ Part 5: Graph Algorithms 3rd Edition. Boston: Addison-Wesley Professional, 2020.
-[2] Berry, A., Simonet, G., Computing the Atom Graph of a Graph and the Union Join Graph of a Hypergraph, Vol. 14, Hal. 1-20, 28 November 2021.
+[1] Lubis, Hendarman, and Dwi Budi Srisulistiowati. "Algoritma Prim Dan Kruskal Dalam Mencari Minimum Spanning Tree Pada Bahasa Pemrograman C." JSI (Jurnal sistem Informasi) Universitas Suryadarma 8.2 (2021): 1-14.
+[2] Nugraha, D. W. (2011). Aplikasi algoritma prim untuk menentukan minimum spanning tree suatu graf berbobot dengan menggunakan pemrograman berorientasi objek. Foristek, 1(2).
+[3] Kurniawan, Didik, Wamiliana Wamiliana, and Cut Shavitri Nursanti Fauzi. "perbandingan kompleksitas algoritma prim, algoritma kruskal, dan algoritma sollin untuk menyelesaikan masalah minimum spanning tree." Jurnal Komputasi 2.1 (2014).
