@@ -6,41 +6,56 @@
 
 ### Definisi Graph
 Graf adalah kumpulan noktah (simpul) di dalam bidang dua dimensi yang dihubungkan dengan sekumpulan garis (sisi). Graph dapat digunakan untuk merepresentasikan objek-objek diskrit dan hubungan antara objek-objek tersebut. Representasi visual dari graph adalah dengan menyatakan objek sebagai noktah, bulatan atau titik (Vertex), sedangkan hubungan antara objek dinyatakan dengan garis (Edge). </br>
-G = (V, E)
-Dimana :
-G = Graph
-V = Simpul atau Vertex, atau Node, atau Titik
-E = Busur atau Edge, atau arc
+G = (V, E)</br>
+Dimana :</br>
+G = Graph</br>
+V = Simpul atau Vertex, atau Node, atau Titik</br>
+E = Busur atau Edge, atau arc</br>
 
-![alt text](<Screenshot 2024-05-29 182439.png>)
-</br>
-Graph dapat digunakan dalam berbagai aplikasi, seperti jaringan sosial, pemetaan jalan,
-dan pemodelan data.
+
+### Istiah-istilah Graph
+Istilah – Istilah Dalam Graph
+Terdapat istilah – istilah yang berkaitan dengan graph, yaitu :
+a.    Vertex
+Vertex adalah himpunan node/titik pada sebuah graph.
+b.    Edge
+Edge adalah garis yang menghubungkan tiap node/vertex.
+c.    Adjacent
+Adjacent adalah dua buah titik dikatakan berdekatan juka dua buah titik tersebut terhubung dengan sebuah sisi.
+d.    Weight
+Sebuah graph dikatakan berbobot apabila terdapat sebuah fungsi bobot bernilai real pada himpunan Edge.
+e.    Path
+Path adalah walk dengan setiap vertex berbeda. Walk didefinisikan sebagai ururtan vertex dan edge. Diawali dengan origin vertex dan diakhiri dengan terminus vertex.
+f.     Cycle
+Cycle adalah siklus atau sirkuit yang berawal dan berakhir pada simpul yang sama.
 
 ### Jenis-Jenis Graph
 
 1. Undirected Graph</br>
-![alt text](<Screenshot 2024-05-29 190515.png>)</br>
+![image](https://github.com/Febrianfalihalwafi/Struktur-Data-Assignment/assets/162521180/e397afde-0f48-4183-b570-e6dac1ae2a8d)
+
+</br>
 Pada undirected graph, simpul-simpulnya terhubung dengan edge yang sifatnya dua arah. Misalnya kita punya simpul 1 dan 2 yang saling terhubung, kita bisa menjelajah dari simpul 1 ke simpul 2, begitu juga sebaliknya.</br>
 
 2. Directed Graph</br>
-![alt text](<Screenshot 2024-05-29 185101.png>)</br>
+![image](https://github.com/Febrianfalihalwafi/Struktur-Data-Assignment/assets/162521180/5d0b975f-c6b4-4ff9-b7d5-11d0d9cc45f4)</br>
 Kebalikan dari undirected graph, pada graph jenis ini simpul-simpulnya terhubung oleh edge yang hanya bisa melakukan jelajah satu arah pada simpul yang ditunjuk. Sebagai contoh jika ada simpul A yang terhubung ke simpul B, namun arah panahnya menuju simpul B, maka kita hanya bisa melakukan jelajah (traversing) dari simpul A ke simpul B, dan tidak berlaku sebaliknya.</br>
 
 3. Weighted Graph</br>
-![alt text](<Screenshot 2024-05-29 185114.png>)</br>
+![image](https://github.com/Febrianfalihalwafi/Struktur-Data-Assignment/assets/162521180/4b58b01e-adc4-40ba-8946-9f4490203013)
+</br>
 Weighted graph adalah jenis graph yang cabangnya diberi label bobot berupa bilangan numerik. Pemberian label bobot pada edge biasanya digunakan untuk memudahkan algoritma dalam menyelesaikan masalah.</br>
 
 4. Unweighted Graph</br>
-![alt text](<Screenshot 2024-05-29 185101-1.png>)</br>
+![image](https://github.com/Febrianfalihalwafi/Struktur-Data-Assignment/assets/162521180/89e08728-e7a0-4008-b36c-41e96b13f855)
+</br>
 Berbeda dengan jenis sebelumnya, unweighted graph tidak memiliki properti bobot pada koneksinya. Graph ini hanya mempertimbangkan apakah dua node saling terhubung atau tidak.
 
 
 ### Tree
 
-### Pengertian Tree
-![alt text](<Screenshot 2024-05-29 190912.png>)
-<p align="justify">Tree adalah kumpulan node yang saling terhubung satu sama lain dalam suatu kesatuan yang membentuk layaknya struktur sebuah pohon. Struktur pohon adalah suatu cara merepresentasikan suatu struktur hirarki (one-to-many) secara grafis yang mirip sebuah pohon, walaupun pohon tersebut hanya tampak sebagai kumpulan node-node dari atas ke bawah. Suatu struktur data yang tidak linier yang menggambarkan hubungan yang hirarkis (one-to-many) dan tidak linier antara elemen-elemennya.</p>
+### Definsi Tree
+Kumpulan node yang saling terhubung satu sama lain dalam suatu kesatuan yang membentuk layakya struktur sebuah pohon. Struktur pohon adalah suatu cara merepresentasikan suatu struktur hirarki (one-to-many) secara grafis yang mirip sebuah pohon, walaupun pohon tersebut hanya tampak sebagai kumpulan node-node dari atas ke bawah. Suatu struktur data yang tidak linier yang menggambarkan hubungan yang hirarkis (one-to-many) dan tidak linier antara elemen-elmennya.
 
 ### Istilah Tree
 - Predecessor, node yang berada diatas node tertentu
@@ -59,7 +74,8 @@ Berbeda dengan jenis sebelumnya, unweighted graph tidak memiliki properti bobot 
 
 ### Jenis-Jenis Tree
 1. Binary Tree</br>
-![alt text](<Screenshot 2024-05-29 191124.png>)</br>
+![image](https://github.com/Febrianfalihalwafi/Struktur-Data-Assignment/assets/162521180/848222c9-c2f6-4a0b-969c-8ae381d9ef52)
+</br>
 Tree dengan syarat bahwa tiap node hanya boleh memiliki maksimal dua sub pohon dan kedua subpohon harus terpisah.
 Kelebihan struktur Binary Tree:
 - Mudah dalam penyusunan algoritma sorting
@@ -67,20 +83,23 @@ Kelebihan struktur Binary Tree:
 - Fleksibel dalam penambahan dan penghapusan data
 
 2. Full Binary Tree</br>
-![alt text](<Screenshot 2024-05-29 191159.png>)</br>
+![image](https://github.com/Febrianfalihalwafi/Struktur-Data-Assignment/assets/162521180/43ffd9de-dd0d-4105-aae5-8ef30de62c9a)
+</br>
 Semua node, kecuali leaf pasti memiliki 2 anak dan tiap subpohon memiliki panjang path yang sama.
 
 3. Complete Binary Tree</br>
-![alt text](<Screenshot 2024-05-29 191400.png>)</br>
+![image](https://github.com/Febrianfalihalwafi/Struktur-Data-Assignment/assets/162521180/07f79a49-ce18-4340-a9ea-eddc53cf3102)
+</br>
 Tree yang mirip dengan full binary tree, tapi tiap subtree boleh memiliki panjang path yang berbeda dan tiap node (kecuali leaf) memiliki 2 anak.
 
 4. Skewed Binary Tree</br>
-![alt text](<Screenshot 2024-05-29 191504.png>)</br>
+![image](https://github.com/Febrianfalihalwafi/Struktur-Data-Assignment/assets/162521180/e41efb71-0668-4fa0-9124-da22b5dc002c)
+</br>
 Binary tree yang semua nodenya (kecuali leaf) hanya memiliki satu anak.
 
 ### GUIDED 
 
-## 1. Program Graph
+## GUIDED 1
 ```C++
 #include <iostream>
 #include <iomanip>
@@ -121,7 +140,7 @@ int main() {
 ## PENJELASAN 
 Program tersebut mendefinisikan dan menampilkan sebuah graf berbasis matriks ketetanggaan untuk tujuh kota di Indonesia (Ciamis, Bandung, Bekasi, Tasikmalaya, Cianjur, Purwokerto, Yogyakarta). Matriks ketetanggaan busur menyimpan jarak antara kota-kota tersebut, dengan nilai nol menunjukkan tidak adanya jalur langsung antara dua kota. Fungsi tampilGraph() digunakan untuk menampilkan graf ini dalam bentuk yang mudah dibaca, dengan mencetak setiap kotabeserta kota-kota yang terhubung langsung dengannya dan jarak antar kota tersebut. Program utama memanggil fungsi tampilGraph() untuk menampilkan informasi graf ini ke layar.
 
-## 2. Program Tree
+## GUIDED 2
 ```c++
 #include <iostream>
 #include <iomanip>
@@ -517,72 +536,72 @@ Program tersebut mengimplementasikan berbagai operasi pada pohon biner menggunak
 Output Program : 
 ![alt text](<Screenshot 2024-05-29 192734.png>)
 
-## GUIDED 1 
+## UNGUIDED 1 
 ```c++
 #include <iostream>
-#include <vector> 
-#include <iomanip> 
-
+#include <iomanip>
+#include <string>
 using namespace std;
 
+// Nama : Febrian Falih Alwafi
+// Kelas : S1F-11-E
+// Nim : 2311102181
+
 int main() {
-    int Fadhel_171;
-    cout << "===== Program Membuat Menghitung Sebuah Jarak Kota Ke Kota Lain =====\n";
+    int jumlahSimpul2311102181;
+    cout << "Silakan masukkan jumlah simpul: ";
+    cin >> jumlahSimpul2311102181;
 
-    do {
-    cout << "\nMasukan Jumalah Simpul : "; cin >> Fadhel_171;
+    string simpul[jumlahSimpul2311102181];
+    int busur[jumlahSimpul2311102181][jumlahSimpul2311102181];
 
-    vector<string> kota(Fadhel_171); 
-    cout << "\nMasukan Nama Simpul" << endl;
-    for (int i = 0; i < Fadhel_171; ++i) {
-        cout << "Simpul " << i + 1 << " : ";
-        cin >> kota[i]; 
+    for (int i = 0; i < jumlahSimpul2311102181; i++) {
+        cout << "Simpul " << i + 1 << ": ";
+        cin >> simpul[i];
     }
 
-    vector<vector<int>> kota2(Fadhel_171, vector<int>(Fadhel_171)); 
-    cout << "\nJarak Masing - Masing Kota\n";
-    for (int i = 0; i < Fadhel_171; ++i) {
-        for (int j = 0; j < Fadhel_171; ++j) { 
-            cout << kota[i] << " --> " << kota[j] << " = ";
-            cin >> kota2[i][j];
+    for (int i = 0; i < jumlahSimpul2311102181; i++) {
+        for (int j = 0; j < jumlahSimpul2311102181; j++) {
+            cout << "Silakan masukkan bobot antara simpul " << simpul[i] << " dan " << simpul[j] << ": ";
+            cin >> busur[i][j];
         }
     }
 
-    cout << "\n====== Grafik Jarak Kota ======";
-    cout << "\n           ";
-    for (const auto& city : kota) { 
-        cout << setw(10) << city;
+    cout << "\nGraf yang dihasilkan:\n";
+    cout << setw(15) << " ";
+    for (int i = 0; i < jumlahSimpul2311102181; i++) {
+        cout << setw(15) << simpul[i];
     }
-    cout << '\n';
+    cout << endl;
 
-    for (int i = 0; i < Fadhel_171; ++i) { 
-        cout << setw(10) << kota[i];
-        for (int j = 0; j < Fadhel_171; ++j) {
-            cout << setw(10) << kota2[i][j]; 
+    for (int i = 0; i < jumlahSimpul2311102181; i++) {
+        cout << setw(15) << simpul[i];
+        for (int j = 0; j < jumlahSimpul2311102181; j++) {
+            cout << setw(15) << busur[i][j];
         }
-        cout << '\n';
+        cout << endl;
     }
-    } while (Fadhel_171 != 0); 
-    cout << "Semoga Bisa Membantu";
+
     return 0;
 }
 ```
 ## OUTPUT 
-![alt text](<Screenshot 2024-05-29 170416.png>)
+![image](https://github.com/Febrianfalihalwafi/Struktur-Data-Assignment/assets/162521180/4dbba55a-2dfb-493e-a582-dcabea95807c)</br>
+
 
 ## PENJELASAN
-Program ini memungkinkan pengguna untuk memasukkan sejumlah kota dan menghitung jarak antar kota-kota tersebut dalam bentuk grafik matriks. Pertama, pengguna diminta untuk memasukkan jumlah simpul dan nama-nama kota tersebut. Selanjutnya, program meminta pengguna untuk mengisi jarak antar kota dalam bentuk matriks, di mana jarak dari setiap kota ke kota lainnya dimasukkan. Setelah itu, program menampilkan grafik jarak kota dalam bentuk tabel yang rapi menggunakan manipulasi format dari pustaka. Proses ini diulang sampai pengguna memasukkan jumlah simpul 0. Program ini membantu dalam visualisasi dan penghitungan jarak antar berbagai kota yang diinput oleh pengguna.
 
-2. Modifikasi guided tree diatas dengan program menu menggunakan input data tree
-dari user dan berikan fungsi tambahan untuk menampilkan node child dan
-descendant dari node yang diinput kan!
-
-## GUIDED 2
+Kode di atas adalah program C++ yang digunakan untuk membangun graf berbobot berdasarkan input dari pengguna. Program ini meminta pengguna untuk memasukkan jumlah simpul (node) dalam graf, kemudian meminta nama untuk setiap simpul dan bobot untuk setiap busur (edge) antara simpul-simpul tersebut. Setelah menerima input, program akan menampilkan graf yang terbentuk dalam bentuk matriks berbobot. Setiap baris dan kolom dalam matriks tersebut mewakili simpul-simpul yang telah dimasukkan, sedangkan elemen matriks menunjukkan bobot dari busur yang menghubungkan simpul-simpul tersebut.
+## UNGUIDED 2
 ```c++
 #include <iostream>
 #include <iomanip>
 
 using namespace std;
+
+// Nama : Febrian Falih Alwafi
+// Nim : 2311102181
+// Kelas : S1F-11-E
 
 struct Pohon
 {
@@ -896,7 +915,7 @@ void characteristic()
 int main()
 {
     init();
-    char pilihan171, Data171, arah171, ParentData171;
+    char pilihan181, Data181, arah181, ParentData181;
     Pohon *node;
 
     cout << "\n===== PROGRAM DATA TREE  =====\n";
@@ -914,37 +933,37 @@ int main()
         cout << "\n8. PostOrder Traversal";
         cout << "\n9. Cetak Child";
         cout << "\n0. Cetak Descendants";
-        cout << "\nPilih program : "; cin >> pilihan171;
+        cout << "\nPilih program : "; cin >> pilihan181;
 
-        switch (pilihan171)
+        switch (pilihan181)
         {
         case '1':
             cout << "\n  Input data untuk rootnya: ";
-            cin >> Data171;
-            buatNode(Data171);
+            cin >> Data181;
+            buatNode(Data181);
             break;
 
         case '2': 
             cout << "\nMasukkan data untuk child: ";
-            cin >> Data171;
+            cin >> Data181;
             cout << "\nChild yang diinput berada di posisi (kiri L / kanan R:) ";
-            cin >> arah171;
+            cin >> arah181;
             cout << "\nMasukkan data dari parent node: ";
-            cin >> ParentData171;
-            node = findNode(root, ParentData171);
+            cin >> ParentData181;
+            node = findNode(root, ParentData181);
             if (node == NULL)
             {
-                cout << "\nNode dengan data " << ParentData171 << " tidak ditemukan!" << endl;
+                cout << "\nNode dengan data " << ParentData181 << " tidak ditemukan!" << endl;
             }
             else
             {
-                if (arah171 == 'L' || arah171 == 'l')
+                if (arah181 == 'L' || arah181 == 'l')
                 {
-                    insertkiri(Data171, node);
+                    insertkiri(Data181, node);
                 }
-                else if (arah171 == 'R' || arah171 == 'r')
+                else if (arah181 == 'R' || arah181 == 'r')
                 {
-                    insertkanan(Data171, node);
+                    insertkanan(Data181, node);
                 }
                 else
                 {
@@ -955,17 +974,17 @@ int main()
 
         case '3': 
             cout << "\nMasukkan data baru untuk diupdate: ";
-            cin >> Data171;
+            cin >> Data181;
             cout << "\nMasukkan data dari node yang ingin diupdate: ";
-            cin >> ParentData171;
-            node = findNode(root, ParentData171);
+            cin >> ParentData181;
+            node = findNode(root, ParentData181);
             if (node == NULL)
             {
-                cout << "\nNode dengan data " << ParentData171 << " tidak ditemukan!" << endl;
+                cout << "\nNode dengan data " << ParentData181 << " tidak ditemukan!" << endl;
             }
             else
             {
-                update(Data171, node);
+                update(Data181, node);
             }
             break;
 
@@ -976,11 +995,11 @@ int main()
 
         case '5': 
             cout << "\nMasukkan data dari node yang ingin dicari: ";
-            cin >> ParentData171;
-            node = findNode(root, ParentData171);
+            cin >> ParentData181;
+            node = findNode(root, ParentData181);
             if (node == NULL)
             {
-                cout << "\nNode dengan data " << ParentData171 << " tidak ditemukan!" << endl;
+                cout << "\nNode dengan data " << ParentData181 << " tidak ditemukan!" << endl;
             }
             else
             {
@@ -1008,11 +1027,11 @@ int main()
 
         case '9': 
             cout << "\nMasukkan data dari node yang ingin melihat child: ";
-            cin >> ParentData171;
-            node = findNode(root, ParentData171);
+            cin >> ParentData181;
+            node = findNode(root, ParentData181);
             if (node == NULL)
             {
-                cout << "\nNode dengan data " << ParentData171 << " tidak ditemukan!" << endl;
+                cout << "\nNode dengan data " << ParentData181 << " tidak ditemukan!" << endl;
             }
             else
             {
@@ -1022,11 +1041,11 @@ int main()
 
         case '0': 
             cout << "\nMasukkan data dari node yang ingin melihat descendants: ";
-            cin >> ParentData171;
-            node = findNode(root, ParentData171);
+            cin >> ParentData181;
+            node = findNode(root, ParentData181);
             if (node == NULL)
             {
-                cout << "\nNode dengan data " << ParentData171 << " tidak ditemukan!" << endl;
+                cout << "\nNode dengan data " << ParentData181 << " tidak ditemukan!" << endl;
             }
             else
             {
@@ -1038,23 +1057,22 @@ int main()
             cout << "\nData tidak di temukan" << endl;
             break;
         }
-    } while (pilihan171 != '!');
+    } while (pilihan181 != '!');
     cout << "\nSelesai Terimakasih" << endl;
 
     return 0;
 }
 ```
 ## OUTPUT 
-![alt text](<Screenshot 2024-05-29 172005.png>)
-![alt text](<Screenshot 2024-05-29 181929.png>)
-![alt text](<Screenshot 2024-05-29 182001.png>)
-![alt text](<Screenshot 2024-05-29 182019.png>)
+![image](https://github.com/Febrianfalihalwafi/Struktur-Data-Assignment/assets/162521180/7ebc8bc8-453c-477a-822b-d374db9a8e84)
+![image](https://github.com/Febrianfalihalwafi/Struktur-Data-Assignment/assets/162521180/5ca15a7a-c8a1-4d24-a4e9-f774e1eb5340)
+![image](https://github.com/Febrianfalihalwafi/Struktur-Data-Assignment/assets/162521180/e7cfc65b-2d62-4681-9409-2c11393feccf)
 
 ## PENJELASAN
-Program ini adalah sebuah aplikasi untuk manajemen dan manipulasi struktur data pohon biner. Pengguna dapat membuat sebuah pohon biner dengan melakukan berbagai operasi seperti menambahkan node ke posisi kiri atau kanan, memperbarui data pada node tertentu, menemukan node, dan mencetak child serta descendants dari node yang dipilih. Program juga menyediakan fungsi untuk melihat karakteristik pohon seperti ukuran dan tinggi pohon, serta melakukan traversal pada pohon dengan metode pre-order, in-order, dan post-order. Antarmuka berbasis menu memandu pengguna untuk memilih operasi yang diinginkan, memungkinkan mereka untuk berinteraksi dan memanipulasi struktur pohon dengan mudah. Program terus berjalan sampai pengguna memasukkan karakter untuk keluar dari aplikasi.
+Kode di atas adalah implementasi dari struktur data pohon biner dalam bahasa C++. Program ini memungkinkan pengguna untuk membuat, mengubah, dan menelusuri pohon biner yang dibuat. Pohon biner dibentuk menggunakan struktur data yang terdiri dari node-node, di mana setiap node memiliki data, pointer ke anak kiri dan kanan, serta pointer ke parent. Fungsi-fungsi seperti buatNode(), insertkiri(), dan insertkanan() digunakan untuk membuat node baru dan menambahkan anak kiri atau kanan dari suatu node.
 
 ## KESIMPULAN 
-Jadi kesimpulan dari teori mengenai graph dan tree tersebut adalah bahwa graph dan tree merupakan struktur data yang penting dalam ilmu komputer untuk merepresentasikan hubungan antar objek. Graph terdiri dari simpul dan sisi, dan memiliki berbagai jenis seperti undirected graph, directed graph, weighted graph, dan unweighted graph, yang masing-masing memiliki karakteristik dan aplikasi yang berbeda. Sementara itu, tree adalah struktur data hirarkis yang juga terdiri dari node yang saling terhubung, dengan istilah-istilah khusus seperti root, leaf, parent, dan child. Jenis-jenis tree meliputi binary tree, full binary tree, complete binary tree, dan skewed binary tree, masing-masing dengan aturan dan kegunaan spesifik. Kedua struktur data ini banyak digunakan dalam berbagai aplikasi, termasuk jaringan sosial, pemetaan jalan, dan pemodelan data, serta algoritma penyortiran dan pencarian data.
+Jadi kesimpulan dari teori mengenai graph dan tree tersebut adalah Graph adalah kumpulan dari node (simpul) yang terhubung oleh busur (edge). Graph dapat digunakan untuk merepresentasikan berbagai jenis hubungan antara objek, seperti jaringan komputer, relasi antar data, atau jalur perjalanan. Graph dapat bersifat terarah (directed) atau tidak terarah (undirected), dapat memiliki bobot pada setiap busur (weighted), dan dapat memiliki siklus (cycle) atau tidak. Graph juga bisa terbagi menjadi beberapa jenis, seperti graph berarah, graph tak berarah, graph berbobot, dan lain-lain, sedangkan Tree adalah tipe khusus dari graph yang memiliki struktur hirarkis. Tree terdiri dari node yang terhubung secara hierarkis, dimulai dari satu node khusus yang disebut sebagai root, dan setiap node lainnya memiliki tepat satu node parent kecuali root. graph dan tree adalah dua struktur data yang penting dan memiliki peran yang berbeda dalam pemrograman dan ilmu komputer. Graph digunakan untuk merepresentasikan hubungan yang lebih umum antara objek, sedangkan tree digunakan untuk representasi struktur hierarkis seperti dalam penyimpanan data terstruktur atau representasi hubungan parent-anak.
 
 ## REFERENSI
 [1] Sedgewick, R., Algorithms in C++ Part 5: Graph Algorithms 3rd Edition. Boston: Addison-Wesley Professional, 2020.
